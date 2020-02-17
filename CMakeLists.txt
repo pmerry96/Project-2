@@ -1,0 +1,103 @@
+cmake_minimum_required(VERSION 3.15)
+project(Project_2)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(.)
+include_directories(TaskA)
+include_directories(TaskB)
+include_directories(TaskB/kernel)
+include_directories(TaskB/mkfs)
+include_directories(TaskB/user)
+
+add_executable(Project_2
+        TaskA/Makefile
+        TaskA/primes.c
+        TaskB/kernel/bio.c
+        TaskB/kernel/buddy.c
+        TaskB/kernel/buf.h
+        TaskB/kernel/console.c
+        TaskB/kernel/date.h
+        TaskB/kernel/defs.h
+        TaskB/kernel/elf.h
+        TaskB/kernel/entry.S
+        TaskB/kernel/exec.c
+        TaskB/kernel/fcntl.h
+        TaskB/kernel/file.c
+        TaskB/kernel/file.h
+        TaskB/kernel/fs.c
+        TaskB/kernel/fs.h
+        TaskB/kernel/kalloc.c
+        TaskB/kernel/kernel.ld
+        TaskB/kernel/kernelvec.S
+        TaskB/kernel/list.c
+        TaskB/kernel/log.c
+        TaskB/kernel/main.c
+        TaskB/kernel/memlayout.h
+        TaskB/kernel/param.h
+        TaskB/kernel/pipe.c
+        TaskB/kernel/plic.c
+        TaskB/kernel/printf.c
+        TaskB/kernel/proc.c
+        TaskB/kernel/proc.h
+        TaskB/kernel/ramdisk.c
+        TaskB/kernel/riscv.h
+        TaskB/kernel/sleeplock.c
+        TaskB/kernel/sleeplock.h
+        TaskB/kernel/spinlock.c
+        TaskB/kernel/spinlock.h
+        TaskB/kernel/start.c
+        TaskB/kernel/stat.h
+        TaskB/kernel/string.c
+        TaskB/kernel/swtch.S
+        TaskB/kernel/syscall.c
+        TaskB/kernel/syscall.h
+        TaskB/kernel/sysfile.c
+        TaskB/kernel/sysproc.c
+        TaskB/kernel/trampoline.S
+        TaskB/kernel/trap.c
+        TaskB/kernel/types.h
+        TaskB/kernel/uart.c
+        TaskB/kernel/virtio.h
+        TaskB/kernel/virtio_disk.c
+        TaskB/kernel/vm.c
+        TaskB/mkfs/mkfs.c
+        TaskB/user/alarmtest.c
+        TaskB/user/alloctest.c
+        TaskB/user/bcachetest.c
+        TaskB/user/bigfile.c
+        TaskB/user/call.c
+        TaskB/user/cat.c
+        TaskB/user/cowtest.c
+        TaskB/user/echo.c
+        TaskB/user/errtest.c
+        TaskB/user/forktest.c
+        TaskB/user/grep.c
+        TaskB/user/init.c
+        TaskB/user/kalloctest.c
+        TaskB/user/kill.c
+        TaskB/user/ln.c
+        TaskB/user/ls.c
+        TaskB/user/mkdir.c
+        TaskB/user/mmaptest.c
+        TaskB/user/printf.c
+        TaskB/user/rm.c
+        TaskB/user/sh.c
+        TaskB/user/stressfs.c
+        TaskB/user/strtest.c
+        TaskB/user/symlinktest.c
+        TaskB/user/testsh.c
+        TaskB/user/tsh.c
+        TaskB/user/tsh.h
+        TaskB/user/tsh0.c
+        TaskB/user/tsh_util.c
+        TaskB/user/ulib.c
+        TaskB/user/umalloc.c
+        TaskB/user/user.h
+        TaskB/user/usertests.c
+        TaskB/user/uthread.c
+        TaskB/user/wc.c
+        TaskB/user/zombie.c
+        TaskB/Makefile
+        TaskB/README
+        README.md)
