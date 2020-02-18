@@ -29,7 +29,7 @@ typedef enum TokenType {
 
 typedef struct Token {
     TokenType type;
-    char *value;
+    char *value; //this is the element of the string that was tokenized
 } Token;
 
 typedef struct TokenList {

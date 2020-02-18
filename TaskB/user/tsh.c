@@ -151,11 +151,11 @@ find_next_toke_with_type(int token_type, Token *tokens, Token *tail) {
 
 int
 ParseSimpleCommand(Token *start, Token *tail, SimpleCommand *simple) {
-    simple->type = CMD_EMPTY;
+    simple->type = CMD_EMPTY; //there is no simple command yet
     Token *p = start;
 
     // get the command path
-    if (p < tail && p->type == TOKEN_WORD) {
+    if (p < tail && p->type == TOKEN_WORD) { //does this correspond with path in exec()?
         simple->type = CMD_SIMPLE;
         simple->name = p->value;
         simple->flag = 0;   // clear flags
@@ -163,7 +163,7 @@ ParseSimpleCommand(Token *start, Token *tail, SimpleCommand *simple) {
 
     // get the arguments
     int i = 0;
-    while (p < tail && p->type == TOKEN_WORD && i < TSH_MAX_NUM_ARGUMENTS) {
+    while ( (p < tail) && (p->type == TOKEN_WORD) && i < (TSH_MAX_NUM_ARGUMENTS)) {
         simple->argv[i] = p->value;
         p++;
         i++;
@@ -454,14 +454,100 @@ GetCommand(ShellState *shell) {
     return 0;
 }
 
-
-int runPipelineCommnad(Pipeline *pipeline) {
-    // TODO
+int runSimpleCommand(SimpleCommand *cmd) {
+    //TODO: implement the non - pipelined command
+    if(cmd->flag != 0x00) //is flag 0x00 indicative of no error?
+    {
+        //return some sort of error, possibly errno
+    }else{
+        int pid = fork();
+        if(pid == 0)
+        {
+            exec(/*path*/, cmd->argv ); //this might be too high level, but im not sure what itd want.
+            //so this will make it to exec, but im worried that I will not be able to redirect output.
+            /*
+             * soln: pass a flag "ispiped", that denotes whether it should pass output to stdin or stdout
+             */
+        }else{
+            //in parent context
+            wait(pid); //pass it the pid to wait on, right?
+        }
+    }
     return 0;
 }
 
-int runSimpleCommand(SimpleCommand *cmd) {
-    //TODO
+
+   /*
+    * supposing that a pipeline command consists of one or more pipes in a command line, let us take for instance the command
+    * > history | grep ls | wc //a command to count how many calls to ls we make
+    *
+    * this will then be broken down into two parts
+    *
+    *          history | grep ls | wc
+    *          ^^^^^^^   ^^^^^^^^^^^^
+    *       Simple CMD | subsequent (possibly) pipeline command
+    *
+    *                   grep ls | wc
+    *                   ^^^^^^^ | ^^
+    *                simple cmd | subsequent (possibly) pipeline command
+    *
+    *                              wc
+    *                              ^^
+    *                              simple command
+    *
+    * So looking at the above example, the process can be abstracted into the following algorithm
+    * 1 - recieve command (that may or may not be pipelined
+    * 2 - make a pass through the command, detecting the presence of a "|" or not
+    *      2a - if a pipe exists:
+    *          2ai   - "break" string immediately before the first pipeline, this promises the "first" of the substrings are then going to be a simple command
+    *                  *2ai - note we will not be writing this output to STDOUT, but rather to STDIN such that the piped cmd can "grab" it
+    *          2aii  - with the now "peeled away" pipeline command, pass the latter part from the break back into the runPipelineCommand() call
+    *                  *2aii - if there is any output expected from this, it will be directed to STDOUT in the runSimpleCommand() call
+    *          2aiii - return to step one now considering hte "peeled away" pipeline command
+    *
+    *      2b - if no pipe exists, pass the cmd to runSimpleCommand()
+    */
+int runPipelineCommnad(Pipeline *pipeline) {
+    // TODO: implement the runPipeline command
+    //Command* cmd = pipeline->commands;
+    //run the simple command
+    runSimpleCommand(pipeline->commands[0].cmd.simple);
+    //extract and remove the simple command from the beginning of pipeline
+    int prepipe_index = 0; //the index immediately prior to the first pipe;
+    int postpipe_index = 0; //the index immediately after the first pipe
+    for(int i = 0; i < /*the length of the command string*/; i++)
+    {
+        if(pipeline->commands[i].cmd == '|')
+        {
+            prepipe_index = i - 1;
+            postpipe_index = i + 1;
+        }
+    }
+    SimpleCommand *newsimple = ;
+    newsimple.type = CMD_SIMPLE;
+    newsimple.flag = 0; //i just set it to zero for a full send who knows whats right
+    int reachedspaceaftercmd = 0;
+    for(int i = 0;(!reachedspaceaftercmd)&&( i < strlen(/*the simple string substring*/)); i++) {
+        if(!reachedspaceaftercmd)
+            newsimple.name[i] = /*the simple cmd substring*/[i]; //this isnt exact, youll need to make a new string for it
+    }
+    int reachedchar = 0;
+    for(int i = 0; i < strlen(newsimple.name); i++)
+    {
+        if (!reachedchar)
+            newsimple.name++; //increment the pointer forward to remove leading whitespace
+    }
+    newsimple.argc = ;// is this in the struct passed into the function?
+    //same for the argv field
+
+    Pipeline *newpipeline;
+    /*
+     * initialize the new pipeline command, if you do not have anything left, leave the
+     * newpipeline pointer null so you can prevent a recursive call as constructed below.
+     */
+    if(newpipeline)
+        runPipelineCommnad(newpipeline);
+
     return 0;
 }
 
@@ -483,16 +569,46 @@ RunCommand(ShellState *shell) {
                 shell->last_exit_status = atoi(cmd->argv[1]);
             }
             return 0;
-        } else if (strcmp(cmd->name, "exit") == 0) {
-            //TODO
+        } else if (strcmp(cmd->name, "exit") == 0) { //these are  "built in commands"
+            //TODO: implement command case where we exit
         } else if (strcmp(cmd->name, "cd") == 0) {
-            //TODO
+            //TODO: implement case where we call a directory
         } else {
             runSimpleCommand(cmd);
         }
     } else if (command->type == CMD_PIPELINE) {
         Pipeline *pipeline = command->cmd.pipeline;
-        runPipelineCommnad(pipeline);
+        runPipelineCommnad(pipeline); //here we can expect the command to be a full pipeline, I believe though that this enters into a sort of recursive state (more below)
+        /*
+         * supposing that a pipeline command consists of one or more pipes in a command line, let us take for instance the command
+         * > history | grep ls | wc //a command to count how many calls to ls we make
+         *
+         * this will then be broken down into two parts
+         *
+         *          history | grep ls | wc
+         *          ^^^^^^^   ^^^^^^^^^^^^
+         *       Simple CMD | subsequent (possibly) pipeline command
+         *
+         *                   grep ls | wc
+         *                   ^^^^^^^ | ^^
+         *                simple cmd | subsequent (possibly) pipeline command
+         *
+         *                              wc
+         *                              ^^
+         *                              simple command
+         *
+         * So looking at the above example, the process can be abstracted into the following algorithm
+         * 1 - recieve command (that may or may not be pipelined
+         * 2 - make a pass through the command, detecting the presence of a "|" or not
+         *      2a - if a pipe exists:
+         *          2ai   - "break" string immediately before the first pipeline, this promises the "first" of the substrings are then going to be a simple command
+         *                  *2ai - note we will not be writing this output to STDOUT, but rather to STDIN such that the piped cmd can "grab" it
+         *          2aii  - with the now "peeled away" pipeline command, pass the latter part from the break back into the runPipelineCommand() call
+         *                  *2aii - if there is any output expected from this, it will be directed to STDOUT in the runSimpleCommand() call
+         *          2aiii - return to step one now considering hte "peeled away" pipeline command
+         *
+         *      2b - if no pipe exists, pass the cmd to runSimpleCommand()
+         */
     }
     return 0;
 }
