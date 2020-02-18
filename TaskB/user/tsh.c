@@ -64,6 +64,7 @@ struct SimpleCommand;
 struct ListCommand;
 struct Pipeline;
 
+#define CMD_OK                                  0x00
 #define CMD_SYNTAX_ERROR                        0x01
 #define CMD_TOO_MANY_ARGUMENTS                  0x02
 #define CMD_MISSING_REDIRECTION_DESTINATION     0x04
@@ -260,14 +261,14 @@ ParsePipeline(Token *head, Token *tail, struct CommandData *cmd_data) {
 
     curr = prev = head;  //and tail and curr all start the same, prob zero
     Pipeline *pipeline = &(cmd_data->_pipeline); //take the command data struct passed in and pull out the pipeline element
-    
+
     //while the current pointer is less than tail
     //  and
     //the pipeline length is less than max
     //  and
     // the cmd_data->n_simples is less than the max length of a list of commands
     while (curr < tail && pipeline->len < TSH_MAX_PIPELINE_LENGTH && cmd_data->n_simples < TSH_MAX_CMD_LIST_LENGTH) {
-    	//curr becomes the index of the next token;
+        //curr becomes the index of the next token;
         curr = find_next_toke_with_type(TOKEN_PIPE, prev, tail);
         if (curr < tail) { //if curr is not at the end of the string
             if (pipeline->len == 0) { //if the pipeline length is zero
@@ -445,7 +446,7 @@ PrintTokenList(TokenList *tl) {
 // TODO : ask - is the commenting I added accurate to the parsing of commands coming in from the cmd line
 int
 GetCommand(ShellState *shell) {
-	//write to fd 1 the contents of shell->prompt for shell->prompt chars
+    //write to fd 1 the contents of shell->prompt for shell->prompt chars
     write(1, shell->prompt, strlen(shell->prompt));
     //eat the command line into stdin
     ClearLine(&shell->cmdline);
@@ -474,127 +475,72 @@ int runSimpleCommand(SimpleCommand *cmd) {
         int pid = fork();
         if(pid == 0)
         {
-        	
             exec(cmd->argv[0], cmd->argv); //this might be too high level, but im not sure what itd want.
             //so this will make it to exec, but im worried that I will not be able to redirect output.
             /*
              * soln: pass a flag "ispiped", that denotes whether it should pass output to stdin or stdout
              */
+            close(pid);
         }else{
             //in parent context
-            wait(pid); //pass it the pid to wait on
+            wait(&pid); //pass it the pid to wait on
             close(pid);
-            
         }
     }
     return 0;
 }
 
 
-   /*
-    * supposing that a pipeline command consists of one or more pipes in a command line, let us take for instance the command
-    * > history | grep ls | wc //a command to count how many calls to ls we make
-    *
-    * this will then be broken down into two parts
-    *
-    *          history | grep ls | wc
-    *          ^^^^^^^   ^^^^^^^^^^^^
-    *       Simple CMD | subsequent (possibly) pipeline command
-    *
-    *                    grep ls | wc
-    *                    ^^^^^^^ | ^^
-    *                 simple cmd | subsequent (possibly) pipeline command
-    *
-    *                              wc
-    *                              ^^
-    *                              simple command to stdout
-    *
-    * So looking at the above example, the process can be abstracted into the following algorithm
-    * 1 - recieve command (that may or may not be pipelined
-    * 2 - make a pass through the command, detecting the presence of a "|" or not
-    *      2a - if a pipe exists:
-    *          2ai   - "break" string immediately before the first pipeline, this promises the "first" of the substrings are then going to be a simple command
-    *                  *2ai - note we will not be writing this output to STDOUT, but rather to STDIN such that the piped cmd can "grab" it
-    *          2aii  - with the now "peeled away" pipeline command, pass the latter part from the break back into the runPipelineCommand() call
-    *                  *2aii - if there is any output expected from this, it will be directed to STDOUT in the runSimpleCommand() call
-    *          2aiii - return to step one now considering hte "peeled away" pipeline command
-    *
-    *      2b - if no pipe exists, pass the cmd to runSimpleCommand()
-    */
-   /*
+/*
+ * supposing that a pipeline command consists of one or more pipes in a command line, let us take for instance the command
+ * > history | grep ls | wc //a command to count how many calls to ls we make
+ *
+ * this will then be broken down into two parts
+ *
+ *          history | grep ls | wc
+ *          ^^^^^^^   ^^^^^^^^^^^^
+ *       Simple CMD | subsequent (possibly) pipeline command
+ *
+ *                    grep ls | wc
+ *                    ^^^^^^^ | ^^
+ *                 simple cmd | subsequent (possibly) pipeline command
+ *
+ *                              wc
+ *                              ^^
+ *                              simple command to stdout
+ *
+ * So looking at the above example, the process can be abstracted into the following algorithm
+ * 1 - recieve command (that may or may not be pipelined
+ * 2 - make a pass through the command, detecting the presence of a "|" or not
+ *      2a - if a pipe exists:
+ *          2ai   - "break" string immediately before the first pipeline, this promises the "first" of the substrings are then going to be a simple command
+ *                  *2ai - note we will not be writing this output to STDOUT, but rather to STDIN such that the piped cmd can "grab" it
+ *          2aii  - with the now "peeled away" pipeline command, pass the latter part from the break back into the runPipelineCommand() call
+ *                  *2aii - if there is any output expected from this, it will be directed to STDOUT in the runSimpleCommand() call
+ *          2aiii - return to step one now considering hte "peeled away" pipeline command
+ *
+ *      2b - if no pipe exists, pass the cmd to runSimpleCommand()
+ */
+
 int runPipelineCommnad(Pipeline *pipeline) {
     // TODO: implement the runPipeline command
-    //Command* cmd = pipeline->commands;
-    //run the simple command
-    //runSimpleCommand(pipeline->commands[0].cmd.simple);
-    //extract and remove the simple command from the beginning of pipeline
-    int prepipe_index = 0; //the index immediately prior to the first pipe;
-    int postpipe_index = 0; //the index immediately after the first pipe
-    for(int i = 0; i < ; i++)
+    if(pipeline->flag != CMD_OK)
     {
-        if(pipeline->commands[i].cmd. == '|')
-        {
-            prepipe_index = i - 1;
-            postpipe_index = i + 1;
-        }
-    }
-    SimpleCommand *newsimple = pipeline->commmands[]->cmd.simple;
-    newsimple.type = CMD_SIMPLE;
-    newsimple.flag = 0; //i just set it to zero for a full send who knows whats right
-    int reachedspaceaftercmd = 0;
-    for(int i = 0;(!reachedspaceaftercmd)&&( i < strlen()); i++) {
-        if(!reachedspaceaftercmd)
-            newsimple.name[i] = [i]; //this isnt exact, youll need to make a new string for it
-    }
-    int reachedchar = 0;
-    for(int i = 0; i < strlen(newsimple.name); i++)
-    {
-        if (!reachedchar)
-            newsimple.name++; //increment the pointer forward to remove leading whitespace
-    }
-    newsimple.argc = ;// is this in the struct passed into the function?
-    //same for the argv field
-
-    Pipeline *newpipeline;
-    /*
-     * initialize the new pipeline command, if you do not have anything left, leave the
-     * newpipeline pointer null so you can prevent a recursive call as constructed below.
-     */
-   /*
-    if(newpipeline)
-        runPipelineCommnad(newpipeline);
-    
-    //perhaps the above would be wrong, here is my updated version of it
-    //this is done as psuedocode, edit it up to functioning when you confirm the process is right
-    if(error)
-    {
-    	//quit
+        //quit
     }else{
-    	int pid = fork();
-    	if(pid == 0)
-	    {
-    		//child process
-    		
-    		if(morepipes) //ie #pipes >= 2
-		    {
-    			//output gets redirected to STDIN to be caught by next simple cmd
-		    }
-    		runSimpleCommand(pipeline.commands->cmd.simple);
-	    }else{
-    		//parent process
-    		wait(pid);
-    		close(pid); //did i blank or is this accurate call?
-    		if(morepipes)
-		    {
-    			//edit the struct to cut out the first cmd, call this fxn again recursively;
-		    }else{
-    			//direct output to stdout
-    		}
-    	}
+        int pid = fork();
+        if(pid == 0)
+        {
+            runSimpleCommand(pipeline->commands->cmd.simple);
+        }else{
+            //parent pocess
+            wait(pid);
+            close(pid); //did i blank or is this accurate call?
+        }
     }
     return 0;
 }
-*/
+
 
 int
 RunCommand(ShellState *shell) {
@@ -622,7 +568,7 @@ RunCommand(ShellState *shell) {
             runSimpleCommand(cmd);
         }
     } else if (command->type == CMD_PIPELINE) {
-        Pipeline *pipeline = command->cmd.pipeline;
+        //Pipeline *pipeline = command->cmd.pipeline;
         //runPipelineCommnad(pipeline); //here we can expect the command to be a full pipeline, I believe though that this enters into a sort of recursive state (more below)
         /*
          * supposing that a pipeline command consists of one or more pipes in a command line, let us take for instance the command
