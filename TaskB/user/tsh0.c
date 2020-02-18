@@ -64,6 +64,7 @@ struct SimpleCommand;
 struct ListCommand;
 struct Pipeline;
 
+#define CMD_OK                                  0x00
 #define CMD_SYNTAX_ERROR                        0x01
 #define CMD_TOO_MANY_ARGUMENTS                  0x02
 #define CMD_MISSING_REDIRECTION_DESTINATION     0x04
@@ -520,80 +521,26 @@ int runSimpleCommand(SimpleCommand *cmd) {
  *
  *      2b - if no pipe exists, pass the cmd to runSimpleCommand()
  */
-/*
+
 int runPipelineCommnad(Pipeline *pipeline) {
- // TODO: implement the runPipeline command
- //Command* cmd = pipeline->commands;
- //run the simple command
- //runSimpleCommand(pipeline->commands[0].cmd.simple);
- //extract and remove the simple command from the beginning of pipeline
- int prepipe_index = 0; //the index immediately prior to the first pipe;
- int postpipe_index = 0; //the index immediately after the first pipe
- for(int i = 0; i < ; i++)
- {
-     if(pipeline->commands[i].cmd. == '|')
-     {
-         prepipe_index = i - 1;
-         postpipe_index = i + 1;
-     }
- }
- SimpleCommand *newsimple = pipeline->commmands[]->cmd.simple;
- newsimple.type = CMD_SIMPLE;
- newsimple.flag = 0; //i just set it to zero for a full send who knows whats right
- int reachedspaceaftercmd = 0;
- for(int i = 0;(!reachedspaceaftercmd)&&( i < strlen()); i++) {
-     if(!reachedspaceaftercmd)
-         newsimple.name[i] = [i]; //this isnt exact, youll need to make a new string for it
- }
- int reachedchar = 0;
- for(int i = 0; i < strlen(newsimple.name); i++)
- {
-     if (!reachedchar)
-         newsimple.name++; //increment the pointer forward to remove leading whitespace
- }
- newsimple.argc = ;// is this in the struct passed into the function?
- //same for the argv field
-
- Pipeline *newpipeline;
-
-  * initialize the new pipeline command, if you do not have anything left, leave the
-  * newpipeline pointer null so you can prevent a recursive call as constructed below.
-
-
- if(newpipeline)
-     runPipelineCommnad(newpipeline);
-
- //perhaps the above would be wrong, here is my updated version of it
- //this is done as psuedocode, edit it up to functioning when you confirm the process is right
- if(error)
- {
-     //quit
- }else{
-     int pid = fork();
-     if(pid == 0)
-     {
-         //child process
-
-         if(morepipes) //ie #pipes >= 2
-         {
-             //output gets redirected to STDIN to be caught by next simple cmd
-         }
-         runSimpleCommand(pipeline.commands->cmd.simple);
-     }else{
-         //parent process
-         wait(pid);
-         close(pid); //did i blank or is this accurate call?
-         if(morepipes)
-         {
-             //edit the struct to cut out the first cmd, call this fxn again recursively;
-         }else{
-             //direct output to stdout
-         }
-     }
- }
- return 0;
+    // TODO: implement the runPipeline command
+    if(pipeline->flag != CMD_OK)
+    {
+        //quit
+    }else{
+        int pid = fork();
+        if(pid == 0)
+        {
+            runSimpleCommand(pipeline->commands->cmd.simple);
+        }else{
+            //parent pocess
+            wait(pid);
+            close(pid); //did i blank or is this accurate call?
+        }
+    }
+    return 0;
 }
-*/
+
 
 int
 RunCommand(ShellState *shell) {
