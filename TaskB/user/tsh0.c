@@ -479,7 +479,7 @@ int runSimpleCommand(SimpleCommand *cmd) {
             /*
              * soln: pass a flag "ispiped", that denotes whether it should pass output to stdin or stdout
              */
-            close(&pid);
+            close(pid);
         }else{
             //in parent context
             wait(&pid); //pass it the pid to wait on
