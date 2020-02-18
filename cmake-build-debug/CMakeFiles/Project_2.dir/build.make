@@ -33,19 +33,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Users\Philip\AppData\Local\JetBrains\CLion 2019.3.2\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Users\Philip\AppData\Local\JetBrains\CLion 2019.3.2\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Philip\Documents\GitHub\Project-2
+CMAKE_SOURCE_DIR = "C:\Users\Philip Merry\Documents\GitHub\Project-2"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug
+CMAKE_BINARY_DIR = "C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Project_2.dir/depend.make
@@ -59,870 +59,870 @@ include CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskA/primes.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskA/primes.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskA/primes.c.obj: ../TaskA/primes.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Project_2.dir/TaskA/primes.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskA\primes.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskA\primes.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Project_2.dir/TaskA/primes.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskA\primes.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskA\primes.c"
 
 CMakeFiles/Project_2.dir/TaskA/primes.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskA/primes.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskA\primes.c > CMakeFiles\Project_2.dir\TaskA\primes.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskA\primes.c" > CMakeFiles\Project_2.dir\TaskA\primes.c.i
 
 CMakeFiles/Project_2.dir/TaskA/primes.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskA/primes.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskA\primes.c -o CMakeFiles\Project_2.dir\TaskA\primes.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskA\primes.c" -o CMakeFiles\Project_2.dir\TaskA\primes.c.s
 
 CMakeFiles/Project_2.dir/TaskB/kernel/bio.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/kernel/bio.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/kernel/bio.c.obj: ../TaskB/kernel/bio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/bio.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\bio.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\bio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/bio.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\bio.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\bio.c"
 
 CMakeFiles/Project_2.dir/TaskB/kernel/bio.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/kernel/bio.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\bio.c > CMakeFiles\Project_2.dir\TaskB\kernel\bio.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\bio.c" > CMakeFiles\Project_2.dir\TaskB\kernel\bio.c.i
 
 CMakeFiles/Project_2.dir/TaskB/kernel/bio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/kernel/bio.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\bio.c -o CMakeFiles\Project_2.dir\TaskB\kernel\bio.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\bio.c" -o CMakeFiles\Project_2.dir\TaskB\kernel\bio.c.s
 
 CMakeFiles/Project_2.dir/TaskB/kernel/buddy.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/kernel/buddy.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/kernel/buddy.c.obj: ../TaskB/kernel/buddy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/buddy.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\buddy.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\buddy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/buddy.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\buddy.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\buddy.c"
 
 CMakeFiles/Project_2.dir/TaskB/kernel/buddy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/kernel/buddy.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\buddy.c > CMakeFiles\Project_2.dir\TaskB\kernel\buddy.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\buddy.c" > CMakeFiles\Project_2.dir\TaskB\kernel\buddy.c.i
 
 CMakeFiles/Project_2.dir/TaskB/kernel/buddy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/kernel/buddy.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\buddy.c -o CMakeFiles\Project_2.dir\TaskB\kernel\buddy.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\buddy.c" -o CMakeFiles\Project_2.dir\TaskB\kernel\buddy.c.s
 
 CMakeFiles/Project_2.dir/TaskB/kernel/console.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/kernel/console.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/kernel/console.c.obj: ../TaskB/kernel/console.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/console.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\console.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\console.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/console.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\console.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\console.c"
 
 CMakeFiles/Project_2.dir/TaskB/kernel/console.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/kernel/console.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\console.c > CMakeFiles\Project_2.dir\TaskB\kernel\console.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\console.c" > CMakeFiles\Project_2.dir\TaskB\kernel\console.c.i
 
 CMakeFiles/Project_2.dir/TaskB/kernel/console.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/kernel/console.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\console.c -o CMakeFiles\Project_2.dir\TaskB\kernel\console.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\console.c" -o CMakeFiles\Project_2.dir\TaskB\kernel\console.c.s
 
 CMakeFiles/Project_2.dir/TaskB/kernel/exec.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/kernel/exec.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/kernel/exec.c.obj: ../TaskB/kernel/exec.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/exec.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\exec.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\exec.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/exec.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\exec.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\exec.c"
 
 CMakeFiles/Project_2.dir/TaskB/kernel/exec.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/kernel/exec.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\exec.c > CMakeFiles\Project_2.dir\TaskB\kernel\exec.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\exec.c" > CMakeFiles\Project_2.dir\TaskB\kernel\exec.c.i
 
 CMakeFiles/Project_2.dir/TaskB/kernel/exec.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/kernel/exec.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\exec.c -o CMakeFiles\Project_2.dir\TaskB\kernel\exec.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\exec.c" -o CMakeFiles\Project_2.dir\TaskB\kernel\exec.c.s
 
 CMakeFiles/Project_2.dir/TaskB/kernel/file.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/kernel/file.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/kernel/file.c.obj: ../TaskB/kernel/file.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/file.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\file.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\file.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/file.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\file.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\file.c"
 
 CMakeFiles/Project_2.dir/TaskB/kernel/file.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/kernel/file.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\file.c > CMakeFiles\Project_2.dir\TaskB\kernel\file.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\file.c" > CMakeFiles\Project_2.dir\TaskB\kernel\file.c.i
 
 CMakeFiles/Project_2.dir/TaskB/kernel/file.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/kernel/file.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\file.c -o CMakeFiles\Project_2.dir\TaskB\kernel\file.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\file.c" -o CMakeFiles\Project_2.dir\TaskB\kernel\file.c.s
 
 CMakeFiles/Project_2.dir/TaskB/kernel/fs.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/kernel/fs.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/kernel/fs.c.obj: ../TaskB/kernel/fs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/fs.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\fs.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\fs.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/fs.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\fs.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\fs.c"
 
 CMakeFiles/Project_2.dir/TaskB/kernel/fs.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/kernel/fs.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\fs.c > CMakeFiles\Project_2.dir\TaskB\kernel\fs.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\fs.c" > CMakeFiles\Project_2.dir\TaskB\kernel\fs.c.i
 
 CMakeFiles/Project_2.dir/TaskB/kernel/fs.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/kernel/fs.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\fs.c -o CMakeFiles\Project_2.dir\TaskB\kernel\fs.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\fs.c" -o CMakeFiles\Project_2.dir\TaskB\kernel\fs.c.s
 
 CMakeFiles/Project_2.dir/TaskB/kernel/kalloc.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/kernel/kalloc.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/kernel/kalloc.c.obj: ../TaskB/kernel/kalloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/kalloc.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\kalloc.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\kalloc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/kalloc.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\kalloc.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\kalloc.c"
 
 CMakeFiles/Project_2.dir/TaskB/kernel/kalloc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/kernel/kalloc.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\kalloc.c > CMakeFiles\Project_2.dir\TaskB\kernel\kalloc.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\kalloc.c" > CMakeFiles\Project_2.dir\TaskB\kernel\kalloc.c.i
 
 CMakeFiles/Project_2.dir/TaskB/kernel/kalloc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/kernel/kalloc.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\kalloc.c -o CMakeFiles\Project_2.dir\TaskB\kernel\kalloc.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\kalloc.c" -o CMakeFiles\Project_2.dir\TaskB\kernel\kalloc.c.s
 
 CMakeFiles/Project_2.dir/TaskB/kernel/list.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/kernel/list.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/kernel/list.c.obj: ../TaskB/kernel/list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/list.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\list.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\list.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/list.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\list.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\list.c"
 
 CMakeFiles/Project_2.dir/TaskB/kernel/list.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/kernel/list.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\list.c > CMakeFiles\Project_2.dir\TaskB\kernel\list.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\list.c" > CMakeFiles\Project_2.dir\TaskB\kernel\list.c.i
 
 CMakeFiles/Project_2.dir/TaskB/kernel/list.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/kernel/list.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\list.c -o CMakeFiles\Project_2.dir\TaskB\kernel\list.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\list.c" -o CMakeFiles\Project_2.dir\TaskB\kernel\list.c.s
 
 CMakeFiles/Project_2.dir/TaskB/kernel/log.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/kernel/log.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/kernel/log.c.obj: ../TaskB/kernel/log.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/log.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\log.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\log.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/log.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\log.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\log.c"
 
 CMakeFiles/Project_2.dir/TaskB/kernel/log.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/kernel/log.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\log.c > CMakeFiles\Project_2.dir\TaskB\kernel\log.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\log.c" > CMakeFiles\Project_2.dir\TaskB\kernel\log.c.i
 
 CMakeFiles/Project_2.dir/TaskB/kernel/log.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/kernel/log.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\log.c -o CMakeFiles\Project_2.dir\TaskB\kernel\log.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\log.c" -o CMakeFiles\Project_2.dir\TaskB\kernel\log.c.s
 
 CMakeFiles/Project_2.dir/TaskB/kernel/main.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/kernel/main.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/kernel/main.c.obj: ../TaskB/kernel/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/main.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\main.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/main.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\main.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\main.c"
 
 CMakeFiles/Project_2.dir/TaskB/kernel/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/kernel/main.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\main.c > CMakeFiles\Project_2.dir\TaskB\kernel\main.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\main.c" > CMakeFiles\Project_2.dir\TaskB\kernel\main.c.i
 
 CMakeFiles/Project_2.dir/TaskB/kernel/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/kernel/main.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\main.c -o CMakeFiles\Project_2.dir\TaskB\kernel\main.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\main.c" -o CMakeFiles\Project_2.dir\TaskB\kernel\main.c.s
 
 CMakeFiles/Project_2.dir/TaskB/kernel/pipe.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/kernel/pipe.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/kernel/pipe.c.obj: ../TaskB/kernel/pipe.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/pipe.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\pipe.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\pipe.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/pipe.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\pipe.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\pipe.c"
 
 CMakeFiles/Project_2.dir/TaskB/kernel/pipe.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/kernel/pipe.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\pipe.c > CMakeFiles\Project_2.dir\TaskB\kernel\pipe.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\pipe.c" > CMakeFiles\Project_2.dir\TaskB\kernel\pipe.c.i
 
 CMakeFiles/Project_2.dir/TaskB/kernel/pipe.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/kernel/pipe.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\pipe.c -o CMakeFiles\Project_2.dir\TaskB\kernel\pipe.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\pipe.c" -o CMakeFiles\Project_2.dir\TaskB\kernel\pipe.c.s
 
 CMakeFiles/Project_2.dir/TaskB/kernel/plic.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/kernel/plic.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/kernel/plic.c.obj: ../TaskB/kernel/plic.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/plic.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\plic.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\plic.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/plic.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\plic.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\plic.c"
 
 CMakeFiles/Project_2.dir/TaskB/kernel/plic.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/kernel/plic.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\plic.c > CMakeFiles\Project_2.dir\TaskB\kernel\plic.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\plic.c" > CMakeFiles\Project_2.dir\TaskB\kernel\plic.c.i
 
 CMakeFiles/Project_2.dir/TaskB/kernel/plic.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/kernel/plic.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\plic.c -o CMakeFiles\Project_2.dir\TaskB\kernel\plic.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\plic.c" -o CMakeFiles\Project_2.dir\TaskB\kernel\plic.c.s
 
 CMakeFiles/Project_2.dir/TaskB/kernel/printf.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/kernel/printf.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/kernel/printf.c.obj: ../TaskB/kernel/printf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/printf.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\printf.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\printf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/printf.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\printf.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\printf.c"
 
 CMakeFiles/Project_2.dir/TaskB/kernel/printf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/kernel/printf.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\printf.c > CMakeFiles\Project_2.dir\TaskB\kernel\printf.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\printf.c" > CMakeFiles\Project_2.dir\TaskB\kernel\printf.c.i
 
 CMakeFiles/Project_2.dir/TaskB/kernel/printf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/kernel/printf.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\printf.c -o CMakeFiles\Project_2.dir\TaskB\kernel\printf.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\printf.c" -o CMakeFiles\Project_2.dir\TaskB\kernel\printf.c.s
 
 CMakeFiles/Project_2.dir/TaskB/kernel/proc.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/kernel/proc.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/kernel/proc.c.obj: ../TaskB/kernel/proc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/proc.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\proc.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\proc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/proc.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\proc.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\proc.c"
 
 CMakeFiles/Project_2.dir/TaskB/kernel/proc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/kernel/proc.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\proc.c > CMakeFiles\Project_2.dir\TaskB\kernel\proc.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\proc.c" > CMakeFiles\Project_2.dir\TaskB\kernel\proc.c.i
 
 CMakeFiles/Project_2.dir/TaskB/kernel/proc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/kernel/proc.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\proc.c -o CMakeFiles\Project_2.dir\TaskB\kernel\proc.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\proc.c" -o CMakeFiles\Project_2.dir\TaskB\kernel\proc.c.s
 
 CMakeFiles/Project_2.dir/TaskB/kernel/ramdisk.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/kernel/ramdisk.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/kernel/ramdisk.c.obj: ../TaskB/kernel/ramdisk.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/ramdisk.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\ramdisk.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\ramdisk.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/ramdisk.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\ramdisk.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\ramdisk.c"
 
 CMakeFiles/Project_2.dir/TaskB/kernel/ramdisk.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/kernel/ramdisk.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\ramdisk.c > CMakeFiles\Project_2.dir\TaskB\kernel\ramdisk.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\ramdisk.c" > CMakeFiles\Project_2.dir\TaskB\kernel\ramdisk.c.i
 
 CMakeFiles/Project_2.dir/TaskB/kernel/ramdisk.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/kernel/ramdisk.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\ramdisk.c -o CMakeFiles\Project_2.dir\TaskB\kernel\ramdisk.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\ramdisk.c" -o CMakeFiles\Project_2.dir\TaskB\kernel\ramdisk.c.s
 
 CMakeFiles/Project_2.dir/TaskB/kernel/sleeplock.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/kernel/sleeplock.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/kernel/sleeplock.c.obj: ../TaskB/kernel/sleeplock.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/sleeplock.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\sleeplock.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\sleeplock.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/sleeplock.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\sleeplock.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\sleeplock.c"
 
 CMakeFiles/Project_2.dir/TaskB/kernel/sleeplock.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/kernel/sleeplock.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\sleeplock.c > CMakeFiles\Project_2.dir\TaskB\kernel\sleeplock.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\sleeplock.c" > CMakeFiles\Project_2.dir\TaskB\kernel\sleeplock.c.i
 
 CMakeFiles/Project_2.dir/TaskB/kernel/sleeplock.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/kernel/sleeplock.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\sleeplock.c -o CMakeFiles\Project_2.dir\TaskB\kernel\sleeplock.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\sleeplock.c" -o CMakeFiles\Project_2.dir\TaskB\kernel\sleeplock.c.s
 
 CMakeFiles/Project_2.dir/TaskB/kernel/spinlock.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/kernel/spinlock.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/kernel/spinlock.c.obj: ../TaskB/kernel/spinlock.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/spinlock.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\spinlock.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\spinlock.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/spinlock.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\spinlock.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\spinlock.c"
 
 CMakeFiles/Project_2.dir/TaskB/kernel/spinlock.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/kernel/spinlock.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\spinlock.c > CMakeFiles\Project_2.dir\TaskB\kernel\spinlock.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\spinlock.c" > CMakeFiles\Project_2.dir\TaskB\kernel\spinlock.c.i
 
 CMakeFiles/Project_2.dir/TaskB/kernel/spinlock.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/kernel/spinlock.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\spinlock.c -o CMakeFiles\Project_2.dir\TaskB\kernel\spinlock.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\spinlock.c" -o CMakeFiles\Project_2.dir\TaskB\kernel\spinlock.c.s
 
 CMakeFiles/Project_2.dir/TaskB/kernel/start.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/kernel/start.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/kernel/start.c.obj: ../TaskB/kernel/start.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/start.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\start.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\start.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/start.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\start.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\start.c"
 
 CMakeFiles/Project_2.dir/TaskB/kernel/start.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/kernel/start.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\start.c > CMakeFiles\Project_2.dir\TaskB\kernel\start.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\start.c" > CMakeFiles\Project_2.dir\TaskB\kernel\start.c.i
 
 CMakeFiles/Project_2.dir/TaskB/kernel/start.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/kernel/start.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\start.c -o CMakeFiles\Project_2.dir\TaskB\kernel\start.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\start.c" -o CMakeFiles\Project_2.dir\TaskB\kernel\start.c.s
 
 CMakeFiles/Project_2.dir/TaskB/kernel/string.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/kernel/string.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/kernel/string.c.obj: ../TaskB/kernel/string.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/string.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\string.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\string.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/string.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\string.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\string.c"
 
 CMakeFiles/Project_2.dir/TaskB/kernel/string.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/kernel/string.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\string.c > CMakeFiles\Project_2.dir\TaskB\kernel\string.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\string.c" > CMakeFiles\Project_2.dir\TaskB\kernel\string.c.i
 
 CMakeFiles/Project_2.dir/TaskB/kernel/string.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/kernel/string.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\string.c -o CMakeFiles\Project_2.dir\TaskB\kernel\string.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\string.c" -o CMakeFiles\Project_2.dir\TaskB\kernel\string.c.s
 
 CMakeFiles/Project_2.dir/TaskB/kernel/syscall.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/kernel/syscall.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/kernel/syscall.c.obj: ../TaskB/kernel/syscall.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/syscall.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\syscall.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\syscall.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/syscall.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\syscall.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\syscall.c"
 
 CMakeFiles/Project_2.dir/TaskB/kernel/syscall.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/kernel/syscall.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\syscall.c > CMakeFiles\Project_2.dir\TaskB\kernel\syscall.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\syscall.c" > CMakeFiles\Project_2.dir\TaskB\kernel\syscall.c.i
 
 CMakeFiles/Project_2.dir/TaskB/kernel/syscall.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/kernel/syscall.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\syscall.c -o CMakeFiles\Project_2.dir\TaskB\kernel\syscall.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\syscall.c" -o CMakeFiles\Project_2.dir\TaskB\kernel\syscall.c.s
 
 CMakeFiles/Project_2.dir/TaskB/kernel/sysfile.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/kernel/sysfile.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/kernel/sysfile.c.obj: ../TaskB/kernel/sysfile.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/sysfile.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\sysfile.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\sysfile.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/sysfile.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\sysfile.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\sysfile.c"
 
 CMakeFiles/Project_2.dir/TaskB/kernel/sysfile.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/kernel/sysfile.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\sysfile.c > CMakeFiles\Project_2.dir\TaskB\kernel\sysfile.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\sysfile.c" > CMakeFiles\Project_2.dir\TaskB\kernel\sysfile.c.i
 
 CMakeFiles/Project_2.dir/TaskB/kernel/sysfile.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/kernel/sysfile.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\sysfile.c -o CMakeFiles\Project_2.dir\TaskB\kernel\sysfile.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\sysfile.c" -o CMakeFiles\Project_2.dir\TaskB\kernel\sysfile.c.s
 
 CMakeFiles/Project_2.dir/TaskB/kernel/sysproc.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/kernel/sysproc.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/kernel/sysproc.c.obj: ../TaskB/kernel/sysproc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/sysproc.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\sysproc.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\sysproc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/sysproc.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\sysproc.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\sysproc.c"
 
 CMakeFiles/Project_2.dir/TaskB/kernel/sysproc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/kernel/sysproc.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\sysproc.c > CMakeFiles\Project_2.dir\TaskB\kernel\sysproc.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\sysproc.c" > CMakeFiles\Project_2.dir\TaskB\kernel\sysproc.c.i
 
 CMakeFiles/Project_2.dir/TaskB/kernel/sysproc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/kernel/sysproc.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\sysproc.c -o CMakeFiles\Project_2.dir\TaskB\kernel\sysproc.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\sysproc.c" -o CMakeFiles\Project_2.dir\TaskB\kernel\sysproc.c.s
 
 CMakeFiles/Project_2.dir/TaskB/kernel/trap.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/kernel/trap.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/kernel/trap.c.obj: ../TaskB/kernel/trap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/trap.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\trap.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\trap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/trap.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\trap.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\trap.c"
 
 CMakeFiles/Project_2.dir/TaskB/kernel/trap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/kernel/trap.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\trap.c > CMakeFiles\Project_2.dir\TaskB\kernel\trap.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\trap.c" > CMakeFiles\Project_2.dir\TaskB\kernel\trap.c.i
 
 CMakeFiles/Project_2.dir/TaskB/kernel/trap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/kernel/trap.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\trap.c -o CMakeFiles\Project_2.dir\TaskB\kernel\trap.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\trap.c" -o CMakeFiles\Project_2.dir\TaskB\kernel\trap.c.s
 
 CMakeFiles/Project_2.dir/TaskB/kernel/uart.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/kernel/uart.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/kernel/uart.c.obj: ../TaskB/kernel/uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/uart.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\uart.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\uart.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/uart.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\uart.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\uart.c"
 
 CMakeFiles/Project_2.dir/TaskB/kernel/uart.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/kernel/uart.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\uart.c > CMakeFiles\Project_2.dir\TaskB\kernel\uart.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\uart.c" > CMakeFiles\Project_2.dir\TaskB\kernel\uart.c.i
 
 CMakeFiles/Project_2.dir/TaskB/kernel/uart.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/kernel/uart.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\uart.c -o CMakeFiles\Project_2.dir\TaskB\kernel\uart.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\uart.c" -o CMakeFiles\Project_2.dir\TaskB\kernel\uart.c.s
 
 CMakeFiles/Project_2.dir/TaskB/kernel/virtio_disk.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/kernel/virtio_disk.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/kernel/virtio_disk.c.obj: ../TaskB/kernel/virtio_disk.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/virtio_disk.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\virtio_disk.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\virtio_disk.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/virtio_disk.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\virtio_disk.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\virtio_disk.c"
 
 CMakeFiles/Project_2.dir/TaskB/kernel/virtio_disk.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/kernel/virtio_disk.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\virtio_disk.c > CMakeFiles\Project_2.dir\TaskB\kernel\virtio_disk.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\virtio_disk.c" > CMakeFiles\Project_2.dir\TaskB\kernel\virtio_disk.c.i
 
 CMakeFiles/Project_2.dir/TaskB/kernel/virtio_disk.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/kernel/virtio_disk.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\virtio_disk.c -o CMakeFiles\Project_2.dir\TaskB\kernel\virtio_disk.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\virtio_disk.c" -o CMakeFiles\Project_2.dir\TaskB\kernel\virtio_disk.c.s
 
 CMakeFiles/Project_2.dir/TaskB/kernel/vm.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/kernel/vm.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/kernel/vm.c.obj: ../TaskB/kernel/vm.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/vm.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\vm.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\vm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/Project_2.dir/TaskB/kernel/vm.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\kernel\vm.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\vm.c"
 
 CMakeFiles/Project_2.dir/TaskB/kernel/vm.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/kernel/vm.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\vm.c > CMakeFiles\Project_2.dir\TaskB\kernel\vm.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\vm.c" > CMakeFiles\Project_2.dir\TaskB\kernel\vm.c.i
 
 CMakeFiles/Project_2.dir/TaskB/kernel/vm.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/kernel/vm.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\kernel\vm.c -o CMakeFiles\Project_2.dir\TaskB\kernel\vm.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\kernel\vm.c" -o CMakeFiles\Project_2.dir\TaskB\kernel\vm.c.s
 
 CMakeFiles/Project_2.dir/TaskB/mkfs/mkfs.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/mkfs/mkfs.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/mkfs/mkfs.c.obj: ../TaskB/mkfs/mkfs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/Project_2.dir/TaskB/mkfs/mkfs.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\mkfs\mkfs.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\mkfs\mkfs.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/Project_2.dir/TaskB/mkfs/mkfs.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\mkfs\mkfs.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\mkfs\mkfs.c"
 
 CMakeFiles/Project_2.dir/TaskB/mkfs/mkfs.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/mkfs/mkfs.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\mkfs\mkfs.c > CMakeFiles\Project_2.dir\TaskB\mkfs\mkfs.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\mkfs\mkfs.c" > CMakeFiles\Project_2.dir\TaskB\mkfs\mkfs.c.i
 
 CMakeFiles/Project_2.dir/TaskB/mkfs/mkfs.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/mkfs/mkfs.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\mkfs\mkfs.c -o CMakeFiles\Project_2.dir\TaskB\mkfs\mkfs.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\mkfs\mkfs.c" -o CMakeFiles\Project_2.dir\TaskB\mkfs\mkfs.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/alarmtest.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/alarmtest.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/alarmtest.c.obj: ../TaskB/user/alarmtest.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/Project_2.dir/TaskB/user/alarmtest.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\alarmtest.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\alarmtest.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/Project_2.dir/TaskB/user/alarmtest.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\alarmtest.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\alarmtest.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/alarmtest.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/alarmtest.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\alarmtest.c > CMakeFiles\Project_2.dir\TaskB\user\alarmtest.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\alarmtest.c" > CMakeFiles\Project_2.dir\TaskB\user\alarmtest.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/alarmtest.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/alarmtest.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\alarmtest.c -o CMakeFiles\Project_2.dir\TaskB\user\alarmtest.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\alarmtest.c" -o CMakeFiles\Project_2.dir\TaskB\user\alarmtest.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/alloctest.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/alloctest.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/alloctest.c.obj: ../TaskB/user/alloctest.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/Project_2.dir/TaskB/user/alloctest.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\alloctest.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\alloctest.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/Project_2.dir/TaskB/user/alloctest.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\alloctest.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\alloctest.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/alloctest.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/alloctest.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\alloctest.c > CMakeFiles\Project_2.dir\TaskB\user\alloctest.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\alloctest.c" > CMakeFiles\Project_2.dir\TaskB\user\alloctest.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/alloctest.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/alloctest.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\alloctest.c -o CMakeFiles\Project_2.dir\TaskB\user\alloctest.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\alloctest.c" -o CMakeFiles\Project_2.dir\TaskB\user\alloctest.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/bcachetest.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/bcachetest.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/bcachetest.c.obj: ../TaskB/user/bcachetest.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/Project_2.dir/TaskB/user/bcachetest.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\bcachetest.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\bcachetest.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/Project_2.dir/TaskB/user/bcachetest.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\bcachetest.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\bcachetest.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/bcachetest.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/bcachetest.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\bcachetest.c > CMakeFiles\Project_2.dir\TaskB\user\bcachetest.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\bcachetest.c" > CMakeFiles\Project_2.dir\TaskB\user\bcachetest.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/bcachetest.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/bcachetest.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\bcachetest.c -o CMakeFiles\Project_2.dir\TaskB\user\bcachetest.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\bcachetest.c" -o CMakeFiles\Project_2.dir\TaskB\user\bcachetest.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/bigfile.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/bigfile.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/bigfile.c.obj: ../TaskB/user/bigfile.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/Project_2.dir/TaskB/user/bigfile.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\bigfile.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\bigfile.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/Project_2.dir/TaskB/user/bigfile.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\bigfile.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\bigfile.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/bigfile.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/bigfile.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\bigfile.c > CMakeFiles\Project_2.dir\TaskB\user\bigfile.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\bigfile.c" > CMakeFiles\Project_2.dir\TaskB\user\bigfile.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/bigfile.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/bigfile.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\bigfile.c -o CMakeFiles\Project_2.dir\TaskB\user\bigfile.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\bigfile.c" -o CMakeFiles\Project_2.dir\TaskB\user\bigfile.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/call.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/call.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/call.c.obj: ../TaskB/user/call.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/Project_2.dir/TaskB/user/call.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\call.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\call.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/Project_2.dir/TaskB/user/call.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\call.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\call.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/call.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/call.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\call.c > CMakeFiles\Project_2.dir\TaskB\user\call.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\call.c" > CMakeFiles\Project_2.dir\TaskB\user\call.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/call.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/call.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\call.c -o CMakeFiles\Project_2.dir\TaskB\user\call.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\call.c" -o CMakeFiles\Project_2.dir\TaskB\user\call.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/cat.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/cat.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/cat.c.obj: ../TaskB/user/cat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/Project_2.dir/TaskB/user/cat.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\cat.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\cat.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/Project_2.dir/TaskB/user/cat.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\cat.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\cat.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/cat.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/cat.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\cat.c > CMakeFiles\Project_2.dir\TaskB\user\cat.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\cat.c" > CMakeFiles\Project_2.dir\TaskB\user\cat.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/cat.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/cat.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\cat.c -o CMakeFiles\Project_2.dir\TaskB\user\cat.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\cat.c" -o CMakeFiles\Project_2.dir\TaskB\user\cat.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/cowtest.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/cowtest.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/cowtest.c.obj: ../TaskB/user/cowtest.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/Project_2.dir/TaskB/user/cowtest.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\cowtest.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\cowtest.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/Project_2.dir/TaskB/user/cowtest.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\cowtest.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\cowtest.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/cowtest.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/cowtest.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\cowtest.c > CMakeFiles\Project_2.dir\TaskB\user\cowtest.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\cowtest.c" > CMakeFiles\Project_2.dir\TaskB\user\cowtest.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/cowtest.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/cowtest.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\cowtest.c -o CMakeFiles\Project_2.dir\TaskB\user\cowtest.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\cowtest.c" -o CMakeFiles\Project_2.dir\TaskB\user\cowtest.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/echo.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/echo.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/echo.c.obj: ../TaskB/user/echo.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/Project_2.dir/TaskB/user/echo.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\echo.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\echo.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/Project_2.dir/TaskB/user/echo.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\echo.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\echo.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/echo.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/echo.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\echo.c > CMakeFiles\Project_2.dir\TaskB\user\echo.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\echo.c" > CMakeFiles\Project_2.dir\TaskB\user\echo.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/echo.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/echo.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\echo.c -o CMakeFiles\Project_2.dir\TaskB\user\echo.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\echo.c" -o CMakeFiles\Project_2.dir\TaskB\user\echo.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/errtest.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/errtest.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/errtest.c.obj: ../TaskB/user/errtest.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/Project_2.dir/TaskB/user/errtest.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\errtest.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\errtest.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/Project_2.dir/TaskB/user/errtest.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\errtest.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\errtest.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/errtest.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/errtest.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\errtest.c > CMakeFiles\Project_2.dir\TaskB\user\errtest.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\errtest.c" > CMakeFiles\Project_2.dir\TaskB\user\errtest.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/errtest.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/errtest.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\errtest.c -o CMakeFiles\Project_2.dir\TaskB\user\errtest.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\errtest.c" -o CMakeFiles\Project_2.dir\TaskB\user\errtest.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/forktest.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/forktest.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/forktest.c.obj: ../TaskB/user/forktest.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/Project_2.dir/TaskB/user/forktest.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\forktest.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\forktest.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/Project_2.dir/TaskB/user/forktest.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\forktest.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\forktest.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/forktest.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/forktest.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\forktest.c > CMakeFiles\Project_2.dir\TaskB\user\forktest.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\forktest.c" > CMakeFiles\Project_2.dir\TaskB\user\forktest.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/forktest.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/forktest.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\forktest.c -o CMakeFiles\Project_2.dir\TaskB\user\forktest.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\forktest.c" -o CMakeFiles\Project_2.dir\TaskB\user\forktest.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/grep.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/grep.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/grep.c.obj: ../TaskB/user/grep.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/Project_2.dir/TaskB/user/grep.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\grep.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\grep.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/Project_2.dir/TaskB/user/grep.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\grep.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\grep.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/grep.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/grep.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\grep.c > CMakeFiles\Project_2.dir\TaskB\user\grep.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\grep.c" > CMakeFiles\Project_2.dir\TaskB\user\grep.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/grep.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/grep.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\grep.c -o CMakeFiles\Project_2.dir\TaskB\user\grep.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\grep.c" -o CMakeFiles\Project_2.dir\TaskB\user\grep.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/init.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/init.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/init.c.obj: ../TaskB/user/init.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/Project_2.dir/TaskB/user/init.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\init.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\init.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/Project_2.dir/TaskB/user/init.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\init.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\init.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/init.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\init.c > CMakeFiles\Project_2.dir\TaskB\user\init.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\init.c" > CMakeFiles\Project_2.dir\TaskB\user\init.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/init.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\init.c -o CMakeFiles\Project_2.dir\TaskB\user\init.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\init.c" -o CMakeFiles\Project_2.dir\TaskB\user\init.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/kalloctest.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/kalloctest.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/kalloctest.c.obj: ../TaskB/user/kalloctest.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/Project_2.dir/TaskB/user/kalloctest.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\kalloctest.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\kalloctest.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/Project_2.dir/TaskB/user/kalloctest.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\kalloctest.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\kalloctest.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/kalloctest.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/kalloctest.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\kalloctest.c > CMakeFiles\Project_2.dir\TaskB\user\kalloctest.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\kalloctest.c" > CMakeFiles\Project_2.dir\TaskB\user\kalloctest.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/kalloctest.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/kalloctest.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\kalloctest.c -o CMakeFiles\Project_2.dir\TaskB\user\kalloctest.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\kalloctest.c" -o CMakeFiles\Project_2.dir\TaskB\user\kalloctest.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/kill.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/kill.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/kill.c.obj: ../TaskB/user/kill.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/Project_2.dir/TaskB/user/kill.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\kill.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\kill.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/Project_2.dir/TaskB/user/kill.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\kill.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\kill.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/kill.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/kill.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\kill.c > CMakeFiles\Project_2.dir\TaskB\user\kill.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\kill.c" > CMakeFiles\Project_2.dir\TaskB\user\kill.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/kill.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/kill.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\kill.c -o CMakeFiles\Project_2.dir\TaskB\user\kill.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\kill.c" -o CMakeFiles\Project_2.dir\TaskB\user\kill.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/ln.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/ln.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/ln.c.obj: ../TaskB/user/ln.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/Project_2.dir/TaskB/user/ln.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\ln.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\ln.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/Project_2.dir/TaskB/user/ln.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\ln.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\ln.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/ln.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/ln.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\ln.c > CMakeFiles\Project_2.dir\TaskB\user\ln.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\ln.c" > CMakeFiles\Project_2.dir\TaskB\user\ln.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/ln.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/ln.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\ln.c -o CMakeFiles\Project_2.dir\TaskB\user\ln.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\ln.c" -o CMakeFiles\Project_2.dir\TaskB\user\ln.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/ls.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/ls.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/ls.c.obj: ../TaskB/user/ls.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/Project_2.dir/TaskB/user/ls.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\ls.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\ls.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/Project_2.dir/TaskB/user/ls.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\ls.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\ls.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/ls.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/ls.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\ls.c > CMakeFiles\Project_2.dir\TaskB\user\ls.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\ls.c" > CMakeFiles\Project_2.dir\TaskB\user\ls.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/ls.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/ls.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\ls.c -o CMakeFiles\Project_2.dir\TaskB\user\ls.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\ls.c" -o CMakeFiles\Project_2.dir\TaskB\user\ls.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/mkdir.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/mkdir.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/mkdir.c.obj: ../TaskB/user/mkdir.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/Project_2.dir/TaskB/user/mkdir.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\mkdir.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\mkdir.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/Project_2.dir/TaskB/user/mkdir.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\mkdir.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\mkdir.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/mkdir.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/mkdir.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\mkdir.c > CMakeFiles\Project_2.dir\TaskB\user\mkdir.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\mkdir.c" > CMakeFiles\Project_2.dir\TaskB\user\mkdir.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/mkdir.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/mkdir.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\mkdir.c -o CMakeFiles\Project_2.dir\TaskB\user\mkdir.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\mkdir.c" -o CMakeFiles\Project_2.dir\TaskB\user\mkdir.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/mmaptest.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/mmaptest.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/mmaptest.c.obj: ../TaskB/user/mmaptest.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/Project_2.dir/TaskB/user/mmaptest.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\mmaptest.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\mmaptest.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/Project_2.dir/TaskB/user/mmaptest.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\mmaptest.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\mmaptest.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/mmaptest.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/mmaptest.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\mmaptest.c > CMakeFiles\Project_2.dir\TaskB\user\mmaptest.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\mmaptest.c" > CMakeFiles\Project_2.dir\TaskB\user\mmaptest.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/mmaptest.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/mmaptest.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\mmaptest.c -o CMakeFiles\Project_2.dir\TaskB\user\mmaptest.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\mmaptest.c" -o CMakeFiles\Project_2.dir\TaskB\user\mmaptest.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/printf.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/printf.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/printf.c.obj: ../TaskB/user/printf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/Project_2.dir/TaskB/user/printf.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\printf.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\printf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/Project_2.dir/TaskB/user/printf.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\printf.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\printf.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/printf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/printf.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\printf.c > CMakeFiles\Project_2.dir\TaskB\user\printf.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\printf.c" > CMakeFiles\Project_2.dir\TaskB\user\printf.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/printf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/printf.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\printf.c -o CMakeFiles\Project_2.dir\TaskB\user\printf.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\printf.c" -o CMakeFiles\Project_2.dir\TaskB\user\printf.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/rm.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/rm.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/rm.c.obj: ../TaskB/user/rm.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/Project_2.dir/TaskB/user/rm.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\rm.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\rm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/Project_2.dir/TaskB/user/rm.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\rm.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\rm.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/rm.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/rm.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\rm.c > CMakeFiles\Project_2.dir\TaskB\user\rm.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\rm.c" > CMakeFiles\Project_2.dir\TaskB\user\rm.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/rm.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/rm.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\rm.c -o CMakeFiles\Project_2.dir\TaskB\user\rm.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\rm.c" -o CMakeFiles\Project_2.dir\TaskB\user\rm.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/sh.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/sh.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/sh.c.obj: ../TaskB/user/sh.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/Project_2.dir/TaskB/user/sh.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\sh.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\sh.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/Project_2.dir/TaskB/user/sh.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\sh.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\sh.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/sh.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/sh.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\sh.c > CMakeFiles\Project_2.dir\TaskB\user\sh.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\sh.c" > CMakeFiles\Project_2.dir\TaskB\user\sh.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/sh.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/sh.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\sh.c -o CMakeFiles\Project_2.dir\TaskB\user\sh.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\sh.c" -o CMakeFiles\Project_2.dir\TaskB\user\sh.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/stressfs.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/stressfs.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/stressfs.c.obj: ../TaskB/user/stressfs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/Project_2.dir/TaskB/user/stressfs.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\stressfs.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\stressfs.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/Project_2.dir/TaskB/user/stressfs.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\stressfs.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\stressfs.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/stressfs.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/stressfs.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\stressfs.c > CMakeFiles\Project_2.dir\TaskB\user\stressfs.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\stressfs.c" > CMakeFiles\Project_2.dir\TaskB\user\stressfs.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/stressfs.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/stressfs.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\stressfs.c -o CMakeFiles\Project_2.dir\TaskB\user\stressfs.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\stressfs.c" -o CMakeFiles\Project_2.dir\TaskB\user\stressfs.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/strtest.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/strtest.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/strtest.c.obj: ../TaskB/user/strtest.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/Project_2.dir/TaskB/user/strtest.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\strtest.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\strtest.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/Project_2.dir/TaskB/user/strtest.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\strtest.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\strtest.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/strtest.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/strtest.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\strtest.c > CMakeFiles\Project_2.dir\TaskB\user\strtest.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\strtest.c" > CMakeFiles\Project_2.dir\TaskB\user\strtest.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/strtest.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/strtest.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\strtest.c -o CMakeFiles\Project_2.dir\TaskB\user\strtest.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\strtest.c" -o CMakeFiles\Project_2.dir\TaskB\user\strtest.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/symlinktest.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/symlinktest.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/symlinktest.c.obj: ../TaskB/user/symlinktest.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/Project_2.dir/TaskB/user/symlinktest.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\symlinktest.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\symlinktest.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/Project_2.dir/TaskB/user/symlinktest.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\symlinktest.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\symlinktest.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/symlinktest.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/symlinktest.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\symlinktest.c > CMakeFiles\Project_2.dir\TaskB\user\symlinktest.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\symlinktest.c" > CMakeFiles\Project_2.dir\TaskB\user\symlinktest.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/symlinktest.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/symlinktest.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\symlinktest.c -o CMakeFiles\Project_2.dir\TaskB\user\symlinktest.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\symlinktest.c" -o CMakeFiles\Project_2.dir\TaskB\user\symlinktest.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/testsh.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/testsh.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/testsh.c.obj: ../TaskB/user/testsh.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/Project_2.dir/TaskB/user/testsh.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\testsh.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\testsh.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/Project_2.dir/TaskB/user/testsh.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\testsh.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\testsh.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/testsh.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/testsh.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\testsh.c > CMakeFiles\Project_2.dir\TaskB\user\testsh.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\testsh.c" > CMakeFiles\Project_2.dir\TaskB\user\testsh.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/testsh.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/testsh.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\testsh.c -o CMakeFiles\Project_2.dir\TaskB\user\testsh.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\testsh.c" -o CMakeFiles\Project_2.dir\TaskB\user\testsh.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/tsh.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/tsh.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/tsh.c.obj: ../TaskB/user/tsh.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/Project_2.dir/TaskB/user/tsh.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\tsh.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\tsh.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/Project_2.dir/TaskB/user/tsh.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\tsh.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\tsh.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/tsh.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/tsh.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\tsh.c > CMakeFiles\Project_2.dir\TaskB\user\tsh.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\tsh.c" > CMakeFiles\Project_2.dir\TaskB\user\tsh.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/tsh.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/tsh.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\tsh.c -o CMakeFiles\Project_2.dir\TaskB\user\tsh.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\tsh.c" -o CMakeFiles\Project_2.dir\TaskB\user\tsh.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/tsh0.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/tsh0.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/tsh0.c.obj: ../TaskB/user/tsh0.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/Project_2.dir/TaskB/user/tsh0.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\tsh0.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\tsh0.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/Project_2.dir/TaskB/user/tsh0.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\tsh0.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\tsh0.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/tsh0.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/tsh0.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\tsh0.c > CMakeFiles\Project_2.dir\TaskB\user\tsh0.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\tsh0.c" > CMakeFiles\Project_2.dir\TaskB\user\tsh0.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/tsh0.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/tsh0.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\tsh0.c -o CMakeFiles\Project_2.dir\TaskB\user\tsh0.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\tsh0.c" -o CMakeFiles\Project_2.dir\TaskB\user\tsh0.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/tsh_util.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/tsh_util.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/tsh_util.c.obj: ../TaskB/user/tsh_util.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/Project_2.dir/TaskB/user/tsh_util.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\tsh_util.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\tsh_util.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/Project_2.dir/TaskB/user/tsh_util.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\tsh_util.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\tsh_util.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/tsh_util.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/tsh_util.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\tsh_util.c > CMakeFiles\Project_2.dir\TaskB\user\tsh_util.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\tsh_util.c" > CMakeFiles\Project_2.dir\TaskB\user\tsh_util.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/tsh_util.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/tsh_util.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\tsh_util.c -o CMakeFiles\Project_2.dir\TaskB\user\tsh_util.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\tsh_util.c" -o CMakeFiles\Project_2.dir\TaskB\user\tsh_util.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/ulib.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/ulib.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/ulib.c.obj: ../TaskB/user/ulib.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/Project_2.dir/TaskB/user/ulib.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\ulib.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\ulib.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/Project_2.dir/TaskB/user/ulib.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\ulib.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\ulib.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/ulib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/ulib.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\ulib.c > CMakeFiles\Project_2.dir\TaskB\user\ulib.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\ulib.c" > CMakeFiles\Project_2.dir\TaskB\user\ulib.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/ulib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/ulib.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\ulib.c -o CMakeFiles\Project_2.dir\TaskB\user\ulib.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\ulib.c" -o CMakeFiles\Project_2.dir\TaskB\user\ulib.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/umalloc.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/umalloc.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/umalloc.c.obj: ../TaskB/user/umalloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/Project_2.dir/TaskB/user/umalloc.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\umalloc.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\umalloc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/Project_2.dir/TaskB/user/umalloc.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\umalloc.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\umalloc.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/umalloc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/umalloc.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\umalloc.c > CMakeFiles\Project_2.dir\TaskB\user\umalloc.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\umalloc.c" > CMakeFiles\Project_2.dir\TaskB\user\umalloc.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/umalloc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/umalloc.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\umalloc.c -o CMakeFiles\Project_2.dir\TaskB\user\umalloc.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\umalloc.c" -o CMakeFiles\Project_2.dir\TaskB\user\umalloc.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/usertests.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/usertests.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/usertests.c.obj: ../TaskB/user/usertests.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/Project_2.dir/TaskB/user/usertests.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\usertests.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\usertests.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/Project_2.dir/TaskB/user/usertests.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\usertests.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\usertests.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/usertests.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/usertests.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\usertests.c > CMakeFiles\Project_2.dir\TaskB\user\usertests.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\usertests.c" > CMakeFiles\Project_2.dir\TaskB\user\usertests.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/usertests.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/usertests.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\usertests.c -o CMakeFiles\Project_2.dir\TaskB\user\usertests.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\usertests.c" -o CMakeFiles\Project_2.dir\TaskB\user\usertests.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/uthread.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/uthread.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/uthread.c.obj: ../TaskB/user/uthread.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/Project_2.dir/TaskB/user/uthread.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\uthread.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\uthread.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/Project_2.dir/TaskB/user/uthread.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\uthread.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\uthread.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/uthread.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/uthread.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\uthread.c > CMakeFiles\Project_2.dir\TaskB\user\uthread.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\uthread.c" > CMakeFiles\Project_2.dir\TaskB\user\uthread.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/uthread.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/uthread.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\uthread.c -o CMakeFiles\Project_2.dir\TaskB\user\uthread.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\uthread.c" -o CMakeFiles\Project_2.dir\TaskB\user\uthread.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/wc.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/wc.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/wc.c.obj: ../TaskB/user/wc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/Project_2.dir/TaskB/user/wc.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\wc.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\wc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/Project_2.dir/TaskB/user/wc.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\wc.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\wc.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/wc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/wc.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\wc.c > CMakeFiles\Project_2.dir\TaskB\user\wc.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\wc.c" > CMakeFiles\Project_2.dir\TaskB\user\wc.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/wc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/wc.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\wc.c -o CMakeFiles\Project_2.dir\TaskB\user\wc.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\wc.c" -o CMakeFiles\Project_2.dir\TaskB\user\wc.c.s
 
 CMakeFiles/Project_2.dir/TaskB/user/zombie.c.obj: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/TaskB/user/zombie.c.obj: CMakeFiles/Project_2.dir/includes_C.rsp
 CMakeFiles/Project_2.dir/TaskB/user/zombie.c.obj: ../TaskB/user/zombie.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/Project_2.dir/TaskB/user/zombie.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\zombie.c.obj   -c C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\zombie.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/Project_2.dir/TaskB/user/zombie.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Project_2.dir\TaskB\user\zombie.c.obj   -c "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\zombie.c"
 
 CMakeFiles/Project_2.dir/TaskB/user/zombie.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/TaskB/user/zombie.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\zombie.c > CMakeFiles\Project_2.dir\TaskB\user\zombie.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\zombie.c" > CMakeFiles\Project_2.dir\TaskB\user\zombie.c.i
 
 CMakeFiles/Project_2.dir/TaskB/user/zombie.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/TaskB/user/zombie.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Philip\Documents\GitHub\Project-2\TaskB\user\zombie.c -o CMakeFiles\Project_2.dir\TaskB\user\zombie.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Philip Merry\Documents\GitHub\Project-2\TaskB\user\zombie.c" -o CMakeFiles\Project_2.dir\TaskB\user\zombie.c.s
 
 # Object files for target Project_2
 Project_2_OBJECTS = \
@@ -1058,7 +1058,7 @@ Project_2.exe: CMakeFiles/Project_2.dir/build.make
 Project_2.exe: CMakeFiles/Project_2.dir/linklibs.rsp
 Project_2.exe: CMakeFiles/Project_2.dir/objects1.rsp
 Project_2.exe: CMakeFiles/Project_2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Linking C executable Project_2.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_63) "Linking C executable Project_2.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Project_2.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1071,6 +1071,6 @@ CMakeFiles/Project_2.dir/clean:
 .PHONY : CMakeFiles/Project_2.dir/clean
 
 CMakeFiles/Project_2.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Philip\Documents\GitHub\Project-2 C:\Users\Philip\Documents\GitHub\Project-2 C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug C:\Users\Philip\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles\Project_2.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Philip Merry\Documents\GitHub\Project-2" "C:\Users\Philip Merry\Documents\GitHub\Project-2" "C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug" "C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug" "C:\Users\Philip Merry\Documents\GitHub\Project-2\cmake-build-debug\CMakeFiles\Project_2.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/Project_2.dir/depend
 
