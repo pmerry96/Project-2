@@ -474,17 +474,16 @@ int runSimpleCommand(SimpleCommand *cmd) {
         int pid = fork();
         if(pid == 0)
         {
-            printf("made inside runsimplecmd\n");
             exec(cmd->argv[0], cmd->argv); //this might be too high level, but im not sure what itd want.
             //so this will make it to exec, but im worried that I will not be able to redirect output.
             /*
              * soln: pass a flag "ispiped", that denotes whether it should pass output to stdin or stdout
              */
+            close(&pid);
         }else{
             //in parent context
             wait(&pid); //pass it the pid to wait on
             close(pid);
-
         }
     }
     return 0;
