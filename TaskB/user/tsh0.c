@@ -482,7 +482,7 @@ int runSimpleCommand(SimpleCommand *cmd) {
              */
         }else{
             //in parent context
-            wait(pid); //pass it the pid to wait on
+            wait(&pid); //pass it the pid to wait on
             close(pid);
 
         }
@@ -556,11 +556,11 @@ int runPipelineCommnad(Pipeline *pipeline) {
  //same for the argv field
 
  Pipeline *newpipeline;
- /*
+
   * initialize the new pipeline command, if you do not have anything left, leave the
   * newpipeline pointer null so you can prevent a recursive call as constructed below.
-  */
-/*
+
+
  if(newpipeline)
      runPipelineCommnad(newpipeline);
 
