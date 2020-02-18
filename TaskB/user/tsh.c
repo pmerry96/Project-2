@@ -534,7 +534,7 @@ int runPipelineCommnad(Pipeline *pipeline) {
             runSimpleCommand(pipeline->commands->cmd.simple);
         }else{
             //parent pocess
-            wait(pid);
+            wait(&pid);
             close(pid); //did i blank or is this accurate call?
         }
     }
