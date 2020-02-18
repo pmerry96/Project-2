@@ -521,6 +521,7 @@ int runSimpleCommand(SimpleCommand *cmd) {
     *
     *      2b - if no pipe exists, pass the cmd to runSimpleCommand()
     */
+   /*
 int runPipelineCommnad(Pipeline *pipeline) {
     // TODO: implement the runPipeline command
     //Command* cmd = pipeline->commands;
@@ -529,21 +530,21 @@ int runPipelineCommnad(Pipeline *pipeline) {
     //extract and remove the simple command from the beginning of pipeline
     int prepipe_index = 0; //the index immediately prior to the first pipe;
     int postpipe_index = 0; //the index immediately after the first pipe
-    for(int i = 0; i < /*the length of the command string*/; i++)
+    for(int i = 0; i < ; i++)
     {
-        if(pipeline->commands[i].cmd./*access the comand string*/ == '|')
+        if(pipeline->commands[i].cmd. == '|')
         {
             prepipe_index = i - 1;
             postpipe_index = i + 1;
         }
     }
-    SimpleCommand *newsimple = pipeline->commmands[/*some index*/]->cmd.simple;
+    SimpleCommand *newsimple = pipeline->commmands[]->cmd.simple;
     newsimple.type = CMD_SIMPLE;
     newsimple.flag = 0; //i just set it to zero for a full send who knows whats right
     int reachedspaceaftercmd = 0;
-    for(int i = 0;(!reachedspaceaftercmd)&&( i < strlen(/*the simple string substring*/)); i++) {
+    for(int i = 0;(!reachedspaceaftercmd)&&( i < strlen()); i++) {
         if(!reachedspaceaftercmd)
-            newsimple.name[i] = /*the simple cmd substring*/[i]; //this isnt exact, youll need to make a new string for it
+            newsimple.name[i] = [i]; //this isnt exact, youll need to make a new string for it
     }
     int reachedchar = 0;
     for(int i = 0; i < strlen(newsimple.name); i++)
@@ -559,6 +560,7 @@ int runPipelineCommnad(Pipeline *pipeline) {
      * initialize the new pipeline command, if you do not have anything left, leave the
      * newpipeline pointer null so you can prevent a recursive call as constructed below.
      */
+   /*
     if(newpipeline)
         runPipelineCommnad(newpipeline);
     
@@ -592,6 +594,7 @@ int runPipelineCommnad(Pipeline *pipeline) {
     }
     return 0;
 }
+*/
 
 int
 RunCommand(ShellState *shell) {
@@ -620,7 +623,7 @@ RunCommand(ShellState *shell) {
         }
     } else if (command->type == CMD_PIPELINE) {
         Pipeline *pipeline = command->cmd.pipeline;
-        runPipelineCommnad(pipeline); //here we can expect the command to be a full pipeline, I believe though that this enters into a sort of recursive state (more below)
+        //runPipelineCommnad(pipeline); //here we can expect the command to be a full pipeline, I believe though that this enters into a sort of recursive state (more below)
         /*
          * supposing that a pipeline command consists of one or more pipes in a command line, let us take for instance the command
          * > history | grep ls | wc //a command to count how many calls to ls we make
