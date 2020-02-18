@@ -622,7 +622,7 @@ RunCommand(ShellState *shell) {
             runSimpleCommand(cmd);
         }
     } else if (command->type == CMD_PIPELINE) {
-        Pipeline *pipeline = command->cmd.pipeline;
+        //Pipeline *pipeline = command->cmd.pipeline;
         //runPipelineCommnad(pipeline); //here we can expect the command to be a full pipeline, I believe though that this enters into a sort of recursive state (more below)
         /*
          * supposing that a pipeline command consists of one or more pipes in a command line, let us take for instance the command
