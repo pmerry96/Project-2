@@ -458,7 +458,7 @@ GetCommand(ShellState *shell) {
     ReadLine(&shell->cmdline);
     //grab the tokens that were in the command
     Tokenize(&shell->cmdline, &shell->tokens);
-    PrintTokenList(&shell->tokens);
+    //PrintTokenList(&shell->tokens);
     struct TokenList *tl = &(shell->tokens);
 
     shell->_cmd_data.n_simples = 0;
@@ -466,7 +466,7 @@ GetCommand(ShellState *shell) {
     ParseCommand(tl->tokens, tl->tokens + tl->len, &shell->_cmd_data);
     shell->cmd = &(shell->_cmd_data.cmd);
 
-    PrintCommand(shell->cmd, "");
+    //PrintCommand(shell->cmd, "");
     return 0;
 }
 
