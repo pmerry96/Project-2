@@ -23,67 +23,55 @@ int inarray(int isin, int* vec, int vecsize)
     return 0;
 }
 
-int main(int argc, char** argv)
-{
-    if(argc < 2)
-    {
+int main(int argc, char** argv) {
+    if (argc < 2) {
         printf("Error: too few arguments\n");
         exit(0);
-    }else{
+    } else {
         int up_to = atoi(argv[1]);
-        if(up_to < 2)
-        {
+        if (up_to < 2) {
             printf("Error: you must pick a number greater than 2\n");
             exit(0);
-        }else{
+        } else {
             int pid;
             int mulsof = 0;
-            for(int i = 0; i < up_to; i++)
-            {
+            for (int i = 0; i < up_to; i++) {
                 pid = fork();
-                if(!pid)
-                {
+                if (!pid) {
                     mulsof = i;
                     continue;
-                }else{
+                } else {
 
                 }
             }
             int mulsvec[up_to];
             int primesvec[up_to];
-            for(int k = 0; k < up_to; k++)
-            {
+            for (int k = 0; k < up_to; k++) {
                 primesvec[k] = 0;
             }
             int p = 0;
-            if(pid == 0)
-            {
+            if (pid == 0) {
                 //children produce multiples
 
                 int start_at = 0;
-                for(int i = 0; i < up_to; i++)
-                {
+                for (int i = 0; i < up_to; i++) {
                     mulsvec[i] = multiplesof(&start_at, up_to, mulsof)
                 }
-            }else{
+            } else {
                 //parents push through the sieve
-                for(int i = 0; i < up_to;)
-                {
-                    if(inarray(i, mulvec, up_to))
-                    {
+                for (int i = 0; i < up_to;) {
+                    if (inarray(i, mulvec, up_to)) {
                         i++;
-                    }else{
+                    } else {
                         primesvec[p++] = i++;
                     }
                 }
             }
-            for(int i = 0; i < up_to; i++)
-            {
-                if(primesvec[i] != 0)
+            for (int i = 0; i < up_to; i++) {
+                if (primesvec[i] != 0)
                     printf("prime n = %d\n", primesvec[i]);
             }
         }
     }
     exit(0);
 }
-
