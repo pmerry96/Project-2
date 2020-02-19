@@ -577,7 +577,7 @@ int runPipelineCommnad(Pipeline *pipeline) {
         dup(p[1]); //duplicate the fd in p[1] -> note it then gets placed in the lowest element of P possible
         close(p[0]);
         close(p[1]);
-        for(int i = 0; i < pipeline->len)
+        for(int i = 0; i < pipeline->len; i++)
         {
             SimpleCommand* simplecmd = pipeline->commands[i].cmd.simple;
             exec(simplecmd->argv[0], simplecmd->argv);
@@ -589,7 +589,7 @@ int runPipelineCommnad(Pipeline *pipeline) {
         dup(p[0]);
         close(p[0]);
         close(p[1]);
-        for(int i = 0; i < pipeline.len)
+        for(int i = 0; i < pipeline->len; i++)
         {
             SimpleCommand* simplecmd = pipeline->commands[i].cmd.simple;
             exec(simplecmd->argv[0], simplecmd->argv);
@@ -601,6 +601,8 @@ int runPipelineCommnad(Pipeline *pipeline) {
     wait(0);
     wait(0);
 
+
+    return(0);
 }
 
 int
