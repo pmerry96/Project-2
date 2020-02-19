@@ -627,7 +627,7 @@ RunCommand(ShellState *shell) {
             shell->should_run = NO;
         } else if (strcmp(cmd->name, "cd") == 0) {
             //TODO: implement case where we call a directory
-            if( strcmp(cmd->argv[1], "..") == 0 || strcmp(cmd->argv[1], ".") == 0){ //thus we are accessing either this dir or a previous dir
+            if(!( strcmp(cmd->argv[1], "..") == 0 || strcmp(cmd->argv[1], ".") == 0)){ //thus we are accessing either this dir or a previous dir
                 if (!chdir(cmd->argv[1])) {
                     printf("Could not change directory to %s\n", cmd->argv[1]);
                 } else {
@@ -639,7 +639,7 @@ RunCommand(ShellState *shell) {
                     chdir("..");
                 }else{
                     //self referential call to cd, no change in dirs necessary.
-                    printf("Already directory referenced by '.'\n");
+                    printf("Already in directory referenced by '.'\n");
 
                     //chdir(".");
                 }
