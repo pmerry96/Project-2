@@ -634,7 +634,7 @@ RunCommand(ShellState *shell) {
                     printf("current dir = %s\n", cmd->argv[1]);
                 }
             }else{
-                if(strcmp(cmd->argv[1], '..') == 0)
+                if(strcmp(cmd->argv[1], "..") == 0)
                 {
                     chdir("..");
                 }else{
