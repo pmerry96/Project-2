@@ -535,7 +535,8 @@ panic(char *s) //included simply to give a gracefull terminating function in cas
 }
 
 int runPipelineCommnad(Pipeline *pipeline) {
-    // TODO: the below (active) code is not functioning. A pipeline command still executes the first command but does not redirect the output nor does it execute the subsequent commands
+    // DONE: the below (active) code is not functioning. A pipeline command still executes the first command but does not redirect the output nor does it execute the subsequent commands
+    // TODO: fix the below code to no longer execute the first single command, but all commands in sequence
     /*
     if(pipeline->flag != CMD_OK)
     {
@@ -627,12 +628,10 @@ RunCommand(ShellState *shell) {
         } else if (strcmp(cmd->name, "exit") == 0) { //these are  "built in commands"
             shell->should_run = NO;
         } else if (strcmp(cmd->name, "cd") == 0) {
-            //TODO: implement case where we call a directory
+            //REOLVED_TODO: implement case where we call a directory
             if(!(strcmp(cmd->argv[1], "..") == 0 || strcmp(cmd->argv[1], ".") == 0)){ //thus we are accessing either this dir or a previous dir
-                if (chdir(cmd->argv[1]) == 0) {
-                    printf("Could not change directory to %s\n", cmd->argv[1]);
-                } else {
-                    printf("current dir = %s\n", cmd->argv[1]);
+                if (chdir(cmd->argv[1]) != 0) {
+                    printf("Error calling directory named %s\n", cmd->argv[1]);
                 }
             }else{
                 if(strcmp(cmd->argv[1], "..") == 0)
