@@ -582,6 +582,7 @@ int runPipelineCommnad(Pipeline *pipeline) {
             SimpleCommand* simplecmd = pipeline->commands[i].cmd.simple;
             printf("exec simplecmd->argv[0] = %s\n", simplecmd->argv[0]);
             exec(simplecmd->argv[0], simplecmd->argv);
+            pipeline = pipeline->commands[i].cmd.pipeline;
         }
     }
     if(fork() == 0){
@@ -628,7 +629,7 @@ RunCommand(ShellState *shell) {
         } else if (strcmp(cmd->name, "cd") == 0) {
             //TODO: implement case where we call a directory
             if(!(strcmp(cmd->argv[1], "..") == 0 || strcmp(cmd->argv[1], ".") == 0)){ //thus we are accessing either this dir or a previous dir
-                if (chdir(cmd->argv[1]) == 0) {
+                if (chdir(cmd->argv[1]) == 0:) {
                     printf("Could not change directory to %s\n", cmd->argv[1]);
                 } else {
                     printf("current dir = %s\n", cmd->argv[1]);
