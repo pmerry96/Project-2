@@ -580,7 +580,7 @@ int runPipelineCommnad(Pipeline *pipeline) {
         for(int i = 0; i < pipeline->len; i++)
         {
             SimpleCommand* simplecmd = pipeline->commands[i].cmd.simple;
-            printf("exec simplecmd->argv[0] = %s\n", argv[0]);
+            printf("exec simplecmd->argv[0] = %s\n", simplecmd->argv[0]);
             exec(simplecmd->argv[0], simplecmd->argv);
         }
     }
@@ -631,7 +631,7 @@ RunCommand(ShellState *shell) {
                 if (!chdir(cmd->argv[1])) {
                     printf("Could not change directory to %s\n", cmd->argv[1]);
                 } else {
-                    printf("current dir = %s\n", cmd->argv[1])
+                    printf("current dir = %s\n", cmd->argv[1]);
                 }
             }else{
                 if(cmd->argv[2][1] == '.')
