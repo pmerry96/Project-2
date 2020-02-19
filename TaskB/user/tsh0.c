@@ -626,6 +626,7 @@ RunCommand(ShellState *shell) {
             shell->should_run = NO;
         } else if (strcmp(cmd->name, "cd") == 0) {
             //TODO: implement case where we call a directory
+            if(!chdir(cmd->argv[1])){printf("Could not change directory to %s", cmd->argv[1]);}
         } else {
             runSimpleCommand(cmd);
         }
