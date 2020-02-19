@@ -100,4 +100,4 @@ add_executable(Project_2
         TaskB/user/zombie.c
         TaskB/Makefile
         TaskB/README
-        README.md)
+        README.md TaskA/primes.c)
