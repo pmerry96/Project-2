@@ -75,13 +75,17 @@ struct Pipeline;
 
 #define CMD_BACKGROUND_MODE                     0x010000
 
-typedef struct Command {
+//so Ive noticed a problem(feature) around this being a type-self referential struct
+//IE
+//Command thecmd
+//thecmd.cmd.pipeline.commands[i].cmd.pipeline.commands[i]...
+typedef struct Command { //im still stumped in how to extract the name of the command from this struct
     int type;
     int flag;
-    union {
+    union { //this means that the data in the union's mem locs is shared between the simple and pipeline structs
         struct SimpleCommand *simple;
         struct Pipeline *pipeline;
-    } cmd;
+    } cmd; //as i learned about unions Im wondering why a union was used? seems to complicate things
 } Command;
 
 typedef struct SimpleCommand {
@@ -443,7 +447,7 @@ PrintTokenList(TokenList *tl) {
     }
     printf("\n");
 }
-// TODO : ask - is the commenting I added accurate to the parsing of commands coming in from the cmd line
+
 int
 GetCommand(ShellState *shell) {
     //write to fd 1 the contents of shell->prompt for shell->prompt chars
@@ -454,7 +458,7 @@ GetCommand(ShellState *shell) {
     ReadLine(&shell->cmdline);
     //grab the tokens that were in the command
     Tokenize(&shell->cmdline, &shell->tokens);
-    PrintTokenList(&shell->tokens);
+    //PrintTokenList(&shell->tokens);
     struct TokenList *tl = &(shell->tokens);
 
     shell->_cmd_data.n_simples = 0;
@@ -462,7 +466,7 @@ GetCommand(ShellState *shell) {
     ParseCommand(tl->tokens, tl->tokens + tl->len, &shell->_cmd_data);
     shell->cmd = &(shell->_cmd_data.cmd);
 
-    PrintCommand(shell->cmd, "");
+    //PrintCommand(shell->cmd, "");
     return 0;
 }
 
@@ -522,11 +526,19 @@ int runSimpleCommand(SimpleCommand *cmd) {
  *      2b - if no pipe exists, pass the cmd to runSimpleCommand()
  */
 
+void
+panic(char *s) //included simply to give a gracefull terminating function in case of error
+{
+    fprintf(2, "%s\n", s);
+    exit(1);
+}
+
 int runPipelineCommnad(Pipeline *pipeline) {
     // TODO: implement the runPipeline command
+    /*
     if(pipeline->flag != CMD_OK)
     {
-        //quit
+        //give back error msg
     }else{
         int pid = fork();
         if(pid == 0)
@@ -539,8 +551,59 @@ int runPipelineCommnad(Pipeline *pipeline) {
         }
     }
     return 0;
-}
+     */
 
+    //The below code came from the following:
+    // ~/user/sc.h
+    //      in function 'runcmd(struct cmd)
+    //             ...
+    //              switch(cmd->type)
+    //                  ...
+    //                  case PIPE:
+    //                      BEGIN COPIED PORTION ***
+    //                      ...
+    //                      END COPIED PORTION   ***
+    //                  break;
+    //              ...
+    //          ...
+    //      ...
+    //  ...
+    int p[2];
+    //void* pcmd = ;//the extracted piped command; //this should be a type that is readily accessible to the argv element;
+    if(pipe(p) < 0)
+        panic("pipe");
+    if(fork() == 0){
+        close(1); //close the fd == 1
+        dup(p[1]); //duplicate the fd in p[1] -> note it then gets placed in the lowest element of P possible
+        close(p[0]);
+        close(p[1]);
+        for(int i = 0; i < pipeline->len; i++)
+        {
+            SimpleCommand* simplecmd = pipeline->commands[i].cmd.simple;
+            exec(simplecmd->argv[0], simplecmd->argv);
+
+        }
+    }
+    if(fork() == 0){
+        close(0); //this is closing this process? -> close takes an int file descriptor, child context is 0, thus this is closing itself
+        dup(p[0]);
+        close(p[0]);
+        close(p[1]);
+        for(int i = 0; i < pipeline->len; i++)
+        {
+            SimpleCommand* simplecmd = pipeline->commands[i].cmd.simple;
+            exec(simplecmd->argv[0], simplecmd->argv);
+
+        }
+    }
+    close(p[0]);
+    close(p[1]);
+    wait(0);
+    wait(0);
+
+
+    return(0);
+}
 
 int
 RunCommand(ShellState *shell) {
@@ -562,14 +625,15 @@ RunCommand(ShellState *shell) {
             return 0;
         } else if (strcmp(cmd->name, "exit") == 0) { //these are  "built in commands"
             //TODO: implement command case where we exit
+            shell->should_run = NO;
         } else if (strcmp(cmd->name, "cd") == 0) {
             //TODO: implement case where we call a directory
         } else {
             runSimpleCommand(cmd);
         }
     } else if (command->type == CMD_PIPELINE) {
-        //Pipeline *pipeline = command->cmd.pipeline;
-        //runPipelineCommnad(pipeline); //here we can expect the command to be a full pipeline, I believe though that this enters into a sort of recursive state (more below)
+        Pipeline *pipeline = command->cmd.pipeline;
+        runPipelineCommnad(pipeline); //here we can expect the command to be a full pipeline, I believe though that this enters into a sort of recursive state (more below)
         /*
          * supposing that a pipeline command consists of one or more pipes in a command line, let us take for instance the command
          * > history | grep ls | wc //a command to count how many calls to ls we make
