@@ -637,7 +637,7 @@ RunCommand(ShellState *shell) {
                 if(strcmp(cmd->argv[1], "..") == 0)
                 {
                     chdir("..");
-                    printf("current directory = %s\n", shell->name)
+                    printf("current directory = %s\n", shell->name);
                 }else{
                     //self referential call to cd, no change in dirs necessary.
                     printf("Already in directory referenced by '.'\n");
