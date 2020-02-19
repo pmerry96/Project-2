@@ -534,7 +534,7 @@ panic(char *s) //included simply to give a gracefull terminating function in cas
 }
 
 int runPipelineCommnad(Pipeline *pipeline) {
-    // TODO: implement the runPipeline command
+    // TODO: the below (active) code is not functioning. A pipeline command still executes the first command but does not redirect the output nor does it execute the subsequent commands
     /*
     if(pipeline->flag != CMD_OK)
     {
@@ -581,7 +581,6 @@ int runPipelineCommnad(Pipeline *pipeline) {
         {
             SimpleCommand* simplecmd = pipeline->commands[i].cmd.simple;
             exec(simplecmd->argv[0], simplecmd->argv);
-
         }
     }
     if(fork() == 0){
@@ -593,7 +592,6 @@ int runPipelineCommnad(Pipeline *pipeline) {
         {
             SimpleCommand* simplecmd = pipeline->commands[i].cmd.simple;
             exec(simplecmd->argv[0], simplecmd->argv);
-
         }
     }
     close(p[0]);
@@ -682,6 +680,6 @@ main(int argc, char *argv[]) {
         RunCommand(&this_shell);
     }
 
-    printf("%s (%d) was terminated\n", this_shell.name, getpid());
+    //printf("%s (%d) was terminated\n", this_shell.name, getpid());
     exit(this_shell.last_exit_status);
 }
