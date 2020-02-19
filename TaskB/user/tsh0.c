@@ -471,7 +471,8 @@ GetCommand(ShellState *shell) {
 }
 
 int runSimpleCommand(SimpleCommand *cmd) {
-    //TODO: implement the non - pipelined command
+    //RESOLVED_TODO - simple commands seem to be working after testing
+    //tested commands include ls, wc, cat, echo, etc
     if(cmd->flag != 0x00) //is flag 0x00 indicative of no error?
     {
         //return some sort of error, possibly errno
@@ -624,7 +625,6 @@ RunCommand(ShellState *shell) {
             }
             return 0;
         } else if (strcmp(cmd->name, "exit") == 0) { //these are  "built in commands"
-            //TODO: implement command case where we exit
             shell->should_run = NO;
         } else if (strcmp(cmd->name, "cd") == 0) {
             //TODO: implement case where we call a directory
