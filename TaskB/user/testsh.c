@@ -143,7 +143,7 @@ one(char *cmd, char *expect, int tight)
   unlink(outfile);
 
   if(strstr(out, expect) != 0){
-    if(tight && strlen(out) > strlen(expect) + 10){
+    if(tight && strlen(out) > strlen(expect) + 20){
       fprintf(2, "testsh: saw expected output, but too much else as well\n");
       return 0; // fail
     }
