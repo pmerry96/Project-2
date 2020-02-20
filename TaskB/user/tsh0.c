@@ -537,7 +537,7 @@ panic(char *s) //included simply to give a gracefull terminating function in cas
 // pipeline.commands[:] is the array of simple commands, accessed similarly to above
 
 //your problem is in redirecting the input
-int runPipelineCommnad(Pipeline *pipeline) {
+int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
     // DONE: the below (active) code is not functioning. A pipeline command still executes the first command but does not redirect the output nor does it execute the subsequent commands
     // TODO: fix the below code to no longer execute the first single command, but all commands in sequence
     /*
@@ -580,6 +580,22 @@ int runPipelineCommnad(Pipeline *pipeline) {
     if(fork() == 0){
         close(1); //close the fd == 1
         dup(p[1]); //duplicate the fd in p[1] -> note it then gets placed in the lowest element of P possible
+        for(int i = 0; i < pipeline->len; i++)
+        {
+            SimpleCommand* simplecmd = pipeline->commands[i].cmd.simple;
+            printf("exec simplecmd->argv[0] = %s\n", simplecmd->argv[0]);
+            exec(simplecmd->argv[0], simplecmd->argv);
+            char* buf[255 + 1];
+            read(1, buf, 256);
+            pipeline = pipeline->commands[i].cmd.pipeline;
+        }
+        close(p[0]);
+        close(p[1]);
+
+    }
+    if(fork() == 0){
+        close(0); //this is closing this process? -> close takes an int file descriptor, child context is 0, thus this is closing itself
+        dup(p[0]);
         close(p[0]);
         close(p[1]);
         for(int i = 0; i < pipeline->len; i++)
@@ -592,23 +608,10 @@ int runPipelineCommnad(Pipeline *pipeline) {
             pipeline = pipeline->commands[i].cmd.pipeline;
         }
     }
-    if(fork() == 0){
-        close(0); //this is closing this process? -> close takes an int file descriptor, child context is 0, thus this is closing itself
-        dup(p[0]);
-        close(p[0]);
-        close(p[1]);
-        for(int i = 0; i < pipeline->len; i++)
-        {
-            SimpleCommand* simplecmd = pipeline->commands[i].cmd.simple;
-            exec(simplecmd->argv[0], simplecmd->argv);
-        }
-    }
     close(p[0]);
     close(p[1]);
     wait(0);
     wait(0);
-
-
     return(0);
 }
 
