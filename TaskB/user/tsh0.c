@@ -564,13 +564,14 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
         printf("%d\n", pipeline->len);
 	    for(int i = 0; i <= pipeline->len; i++)
 	    {
-	    	if(i == pipeline->len - 1)
+	    	if(i == pipeline->len)
 		    {
 	    		close(p[1]);
 		    }
 		    SimpleCommand* simplecmd = pipeline->commands[i].cmd.simple;
-		    printf("exec simplecmd->argv[ %d ] = %s\n", i, simplecmd->argv[i]);
-		    exec(simplecmd->argv[0], simplecmd->argv);
+	    	for(int j = 0; j < simplecmd->argc; j++)
+		        printf("exec simplecmd->argv[ %d ] = %s\n", i, simplecmd->argv[j]);
+	    	exec(simplecmd->argv[0], simplecmd->argv);
 		    pipeline = pipeline->commands[i].cmd.pipeline;
 	    }
     }
