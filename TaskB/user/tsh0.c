@@ -557,7 +557,7 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
     //  ...
     int p[2];
     pipe(p);
-    if(fork() == 0){
+    if(fork() > 0){
     	//fixes the file descriptors in the parent
 	    close(p[0]);
 	    write(p[1], pipeline->commands[0].cmd.simple->argv, 256);
