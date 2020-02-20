@@ -570,7 +570,7 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
 		    close(p[1]);
 	    } else {
 		    //execs in child
-		    close(0);//close the write end on the child side - it only
+		    close(1);//close the write end on the child side - it only
 		    dup(p[0]);
 		    close(p[0]);
 		    close(p[1]);
