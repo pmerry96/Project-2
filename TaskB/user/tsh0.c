@@ -535,6 +535,8 @@ panic(char *s) //included simply to give a gracefull terminating function in cas
 }
 // pipeline.commands[].simple.argv is the simple command
 // pipeline.commands[:] is the array of simple commands, accessed similarly to above
+
+//your problem is in redirecting the input
 int runPipelineCommnad(Pipeline *pipeline) {
     // DONE: the below (active) code is not functioning. A pipeline command still executes the first command but does not redirect the output nor does it execute the subsequent commands
     // TODO: fix the below code to no longer execute the first single command, but all commands in sequence
@@ -585,6 +587,8 @@ int runPipelineCommnad(Pipeline *pipeline) {
             SimpleCommand* simplecmd = pipeline->commands[i].cmd.simple;
             printf("exec simplecmd->argv[0] = %s\n", simplecmd->argv[0]);
             exec(simplecmd->argv[0], simplecmd->argv);
+            char* buf[255 + 1];
+            read(1, buff, 256);
             pipeline = pipeline->commands[i].cmd.pipeline;
         }
     }
