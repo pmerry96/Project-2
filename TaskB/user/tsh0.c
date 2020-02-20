@@ -561,19 +561,23 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
 	SimpleCommand *simplecmd;
     //in the below if statement - what about piperead() or pipewrite()
     for(i = 0; i < pipeline->len; i++) {
-	    if (fork() > 0) {
+    	int pid = fork();
+	    if (pid > 0) {
 		    //fixes the file descriptors in the parent
 		    //close(p[0]);
+		    /*
 		    char buf[256];
 		    read(1, buf, 256);
 		    write(0, buf, 256);
 		    close(p[1]);
+		     */
+		    wait(0);
 	    } else {
 		    //execs in child
-		    close(1);//close the write end on the child side - it only
-		    dup(p[0]);
-		    close(p[0]);
-		    close(p[1]);
+		    close(1/*STD_OUT*/);//close the write end on the child side - it only
+		    dup(p[1]); //now we have duped the fd to take the position of 1
+		    close(p[0]); //close it out because we wont use this handle
+		    close(p[1]); //
 		    simplecmd = pipeline->commands[i].cmd.simple;
 		    exec(simplecmd->argv[0], simplecmd->argv); //my biggest problem is here
 		    //1 - it only executes the first command
