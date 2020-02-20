@@ -528,7 +528,7 @@ int runSimpleCommand(SimpleCommand *cmd) {
  */
 
 void
-panic(char *s) //included simply to give a gracefull terminating function in case of error
+panic(char *s) //included simply to give a graceful terminating function in case of error
 {
     fprintf(2, "%s\n", s);
     exit(1);
