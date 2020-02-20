@@ -574,10 +574,18 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
 		    wait(0);
 	    } else {
 		    //execs in child
-		    close(1/*STD_OUT*/);//close the write end on the child side - it only
-		    dup(p[1]); //now we have duped the fd to take the position of 1
-		    close(p[0]); //close it out because we wont use this handle
-		    close(p[1]); //
+		    if (i == pipeline->len - 1) {
+			    //dont close stdout
+				close(0/*STD_IN*/);
+				dup(p[0]);
+			    close(p[0]); //close it out because we wont use this handle
+			    close(p[1]); //
+		    } else {
+			    close(1/*STD_OUT*/);//close the write end on the child side - it only
+			    dup(p[1]); //now we have duped the fd to take the position of 1
+			    close(p[0]); //close it out because we wont use this handle
+			    close(p[1]); //
+	        }
 		    simplecmd = pipeline->commands[i].cmd.simple;
 		    exec(simplecmd->argv[0], simplecmd->argv); //my biggest problem is here
 		    //1 - it only executes the first command
