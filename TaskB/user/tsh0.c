@@ -6,6 +6,9 @@
 #define YES     1
 #define NO      0
 #define EOF     -1
+#define STDOUT 1
+#define STDIN 0
+
 
 static char *default_prompt = "tsh> ";
 
@@ -563,28 +566,23 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
     for(i = 0; i < pipeline->len; i++) {
     	int pid = fork();
 	    if (pid > 0) {
-		    //fixes the file descriptors in the parent
-		    //close(p[0]);
-		    /*
-		    char buf[256];
-		    read(1, buf, 256);
-		    write(0, buf, 256);
-		    close(p[1]);
-		     */
-		    wait(0);
+	    	close(p[0]);
+	    	close(p[1]);
+		    wait(0); //parent waits for child to finish up
 	    } else {
-		    if (i != 0) {
-			    close(0/*STD_IN*/);
+		    if (i != 0) { //dont redirect input on the first command of the string
+			    close(STD_IN);
 			    dup(p[0]);
 		    }
-		    if (i != pipeline->len - 1) {
-		        close(1/*STD_OUT*/);//close the write end on the child side - it only
+		    if (i != pipeline->len - 1) { //dont redirect output on the last command of the string
+		        close(STD_OUT);//close the write end on the child side - it only
 		        dup(p[1]); //now we have duped the fd to take the position of 1
 	        }
 		    close(p[0]); //close it out because we wont use this handle
-		    close(p[1]); //
+		    close(p[1]);
 		    simplecmd = pipeline->commands[i].cmd.simple;
-		    exec(simplecmd->argv[0], simplecmd->argv); //my biggest problem is here
+		    exec(simplecmd->argv[0], simplecmd->argv); //my biggest problem is here4
+		    printf("not hung\n");
 	    }
     }
     /*
