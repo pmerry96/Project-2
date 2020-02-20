@@ -561,14 +561,14 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
         close(p[0]);
         dup(p[1]); //sending stdout to the pipe rather than the cmd line
         //close(p[1]);
-	    for(int i = 0; i < pipeline->len; i++)
+	    for(int i = 0; i <= pipeline->len; i++)
 	    {
 	    	if(i == pipeline->len - 1)
 		    {
 	    		close(p[1]);
 		    }
 		    SimpleCommand* simplecmd = pipeline->commands[i].cmd.simple;
-		    printf("exec simplecmd->argv[%i] = %s\n", i, simplecmd->argv[i]);
+		    printf("exec simplecmd->argv[ %d ] = %s\n", i, simplecmd->argv[i]);
 		    exec(simplecmd->argv[0], simplecmd->argv);
 		    pipeline = pipeline->commands[i].cmd.pipeline;
 	    }
