@@ -6,8 +6,8 @@
 #define YES     1
 #define NO      0
 #define EOF     -1
-#define STDOUT 1
-#define STDIN 0
+#define STD_OUT 1
+#define STD_IN 0
 
 
 static char *default_prompt = "tsh> ";
