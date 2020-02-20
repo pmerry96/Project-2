@@ -572,7 +572,7 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
 	    } else {
 		    if (i != 0) { //dont redirect input on the first command of the string
 			    close(STD_IN);
-			    dup(p[0]);
+			    dup(p[0]); //this lets the process grab input previously written
 		    }
 		    if (i != pipeline->len - 1) { //dont redirect output on the last command of the string
 		        close(STD_OUT);//close the write end on the child side - it only
