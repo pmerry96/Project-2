@@ -565,7 +565,7 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
 		    //fixes the file descriptors in the parent
 		    //close(p[0]);
 		    char buf[256];
-		    read(p[0], buf, 256)
+		    read(p[0], buf, 256);
 		    write(p[1], buf, 256);
 		    close(p[1]);
 	    } else {
