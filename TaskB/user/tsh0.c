@@ -572,6 +572,7 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
 		    close(p[1]);
 		     */
 		    wait(0);
+		    close(pid);
 	    } else {
 		    //execs in child
 		    if (i == pipeline->len - 1) {
@@ -581,7 +582,7 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
 			    close(p[0]); //close it out because we wont use this handle
 			    close(p[1]); //
 		    } else {
-		    	if(i != 0) {
+		    	if(i != 0) {echo
 				    close(0/*STD_IN*/);
 				    dup(p[0]);
 			    }
