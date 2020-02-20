@@ -564,7 +564,7 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
     }else{
 	    //execs in child
 	    close(0);//close the write end on the child side - it only
-	    int fd = dup(p[0]);
+	    dup(p[0]);
 	    close(p[0]);
 	    close(p[1]);
 	    SimpleCommand* simplecmd;
