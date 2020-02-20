@@ -581,8 +581,8 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
 		    //close(p[0]); //close it out because we wont use this handle
 		    //close(p[1]);
 		    simplecmd = pipeline->commands[i].cmd.simple;
+		    printf("nothung\n");
 		    exec(simplecmd->argv[0], simplecmd->argv); //my biggest problem is here4
-		    printf("not hung\n");
 		    close(p[0]);
 		    close(p[1]);
 	    }
@@ -606,8 +606,6 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
 	    close(p[1]);
     }
      */
-    wait(0);
-    wait(0);
     return(0);
 }
 
