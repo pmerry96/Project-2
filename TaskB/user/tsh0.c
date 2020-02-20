@@ -538,7 +538,7 @@ panic(char *s) //included simply to give a graceful terminating function in case
 //your problem is in redirecting the input
 int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
     // DONE: the below (active) code is not functioning. A pipeline command still executes the first command but does not redirect the output nor does it execute the subsequent commands
-    // TODO: fix the below code to no longer execute the first single command, but all commands in sequence
+    // TODO: the below code now execs all commands in a pipeline, but it wont redirect output. Fix that.
 
     //The below code came from the following:
     // ~/user/sc.h
@@ -565,8 +565,8 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
 		    //fixes the file descriptors in the parent
 		    //close(p[0]);
 		    char buf[256];
-		    read(p[0], buf, 256);
-		    write(p[1], buf, 256);
+		    read(1, buf, 256);
+		    write(0, buf, 256);
 		    close(p[1]);
 	    } else {
 		    //execs in child
