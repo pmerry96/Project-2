@@ -557,22 +557,25 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
     //  ...
     int p[2];
     pipe(p);
-    if(fork() > 0){
-    	//fixes the file descriptors in the parent
-	    close(p[0]);
-	    write(p[1], pipeline->commands[0].cmd.simple->argv, 256);
-	    close(p[1]);
-    }else{
-	    //execs in child
-	    close(0);//close the write end on the child side - it only
-	    dup(p[0]);
-	    close(p[0]);
-	    close(p[1]);
-	    SimpleCommand* simplecmd;
-	    for(int i = 0; i <= pipeline->len; i++)
-	    {
+    int i = 0;
+	SimpleCommand *simplecmd;
+    //in the below if statement - what about piperead() or pipewrite()
+    for(i = 0; i < pipeline->len; i++) {
+	    if (fork() > 0) {
+		    //fixes the file descriptors in the parent
+		    close(p[0]);
+		    write(p[1], pipeline->commands[0].cmd.simple->argv, 256);
+		    close(p[1]);
+	    } else {
+		    //execs in child
+		    close(0);//close the write end on the child side - it only
+		    dup(p[0]);
+		    close(p[0]);
+		    close(p[1]);
 		    simplecmd = pipeline->commands[i].cmd.simple;
-		    exec(simplecmd->argv[0], simplecmd->argv);
+		    exec(simplecmd->argv[0], simplecmd->argv); //my biggest problem is here
+		    //1 - it only executes the first command
+		    //2 - it doesnt redirect its output/
 	    }
     }
     /*
