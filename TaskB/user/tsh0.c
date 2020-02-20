@@ -561,6 +561,7 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
         close(p[0]);
         dup(p[1]); //sending stdout to the pipe rather than the cmd line
         //close(p[1]);
+        printf("%d\n", pipeline->len);
 	    for(int i = 0; i <= pipeline->len; i++)
 	    {
 	    	if(i == pipeline->len - 1)
@@ -573,6 +574,7 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
 		    pipeline = pipeline->commands[i].cmd.pipeline;
 	    }
     }
+    /*
     if(fork() == 0){
         close(0); //this is closing this process? -> close takes an int file descriptor, child context is 0, thus this is closing itself
         dup(p[0]);
@@ -590,6 +592,7 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
 	    close(p[0]);
 	    close(p[1]);
     }
+     */
     close(p[0]);
     close(p[1]);
     wait(0);
