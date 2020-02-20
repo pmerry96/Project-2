@@ -571,7 +571,8 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
 	    		close(p[1]);
 		    }
 	    	simplecmd = pipeline->commands[i].cmd.simple;
-	    	printf("pipeline->commands[i].cmd.simplecmd->argv = %s", simplecmd->argv);
+	    	printf("pipeline->commands[i].cmd.simplecmd->argv = %s\n", simplecmd->argv);
+	    	printf("command # %d\n", i)
 	    	for(int j = 0; j < simplecmd->argc; j++)
 		        printf("exec simplecmd->argv[ %d ] = %s\n", i, simplecmd->argv[j]);
 	    	exec(simplecmd->argv[0], simplecmd->argv);
@@ -580,7 +581,6 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
 		    {
 			    write(0, buf, 256); //write to stdin
 		    }
-		    pipeline = pipeline->commands[i].cmd.pipeline;
 	    }
     }else{
     	//what does the parent process do
