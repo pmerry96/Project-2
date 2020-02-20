@@ -562,17 +562,13 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
         SimpleCommand* simplecmd;
 	    for(int i = 0; i <= pipeline->len; i++)
 	    {
-	    	printf("i = %d\n", i);
 	    	simplecmd = pipeline->commands[i].cmd.simple;
-	    	printf("pipeline->commands[i].cmd.simplecmd->argv = %s\n", simplecmd->argv);
-	    	printf("command # %d\n", i+1);
-	    	printf("\texec simplecmd->argv = %s\n", i, simplecmd->argv);
-		    dup(p[1]);
+		    int des = dup(p[1]);
 	    	exec(simplecmd->argv[0], simplecmd->argv);
 		    char* buf[256];
-		    while(read(p[0], buf, 256))
+		    while(read(1, buf, 256))
 		    {
-			    write(0, buf, 256); //write to stdin
+			    fprintf(0, "%s", buf); //write to stdin
 		    }
 	    }
     }else{
