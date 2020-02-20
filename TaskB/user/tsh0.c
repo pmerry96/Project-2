@@ -572,7 +572,7 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
 	    char* buf[256];
 	    while(read(p[1], buf, 256) > 0)
 	    {
-		    write(0, "%s", buf); //write to stdin
+		    write(0, buf, 256); //write to stdin
 	    }
     	wait(0);
     }
