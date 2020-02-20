@@ -556,32 +556,23 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
     //      ...
     //  ...
     int p[2];
-    pipe(p);
     if(fork() > 0){
-		//execute in parent proc
-	    close(p[1]);//close the write end on the child side - it only
-	    printf("len = %d\n", pipeline->len);
+    	//fixes the file descriptors in the parent
+	    close(p[0]);
+	    write(p[1], pipeline->commands[0].cmd.simple->argv, 256)
+	    close(p[1])
+    }else{
+	    //execs in child
+	    close(0);//close the write end on the child side - it only
+	    int fd = dup(p[0]);
+	    close(p[0]);
+	    close(p[1]);
 	    SimpleCommand* simplecmd;
-	    int oldi = 0;
 	    for(int i = 0; i <= pipeline->len; i++)
 	    {
-		    if(i > oldi)
-		    {
-			    oldi++;
-			    printf("iterating\n");
-		    }
 		    simplecmd = pipeline->commands[i].cmd.simple;
-		    dup(p[1]);
-		    exec(simplecmd->argv[0], simplecmd->argv);
+		    exec(simplecmd->argv[0], simplecmd->argv)
 	    }
-    }else{
-    	//have the child do the reading
-	    char* buf[256];
-	    while(read(p[1], buf, 256) > 0)
-	    {
-		    write(0, buf, 256); //write to stdin
-	    }
-	    wait(0);
     }
     /*
     if(fork() == 0){
@@ -602,8 +593,6 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
 	    close(p[1]);
     }
      */
-    close(p[0]);
-    close(p[1]);
     wait(0);
     wait(0);
     return(0);
