@@ -581,6 +581,10 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
 			    close(p[0]); //close it out because we wont use this handle
 			    close(p[1]); //
 		    } else {
+		    	if(i != 0) {
+				    close(0/*STD_IN*/);
+				    dup(p[0]);
+			    }
 			    close(1/*STD_OUT*/);//close the write end on the child side - it only
 			    dup(p[1]); //now we have duped the fd to take the position of 1
 			    close(p[0]); //close it out because we wont use this handle
