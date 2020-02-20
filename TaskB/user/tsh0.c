@@ -569,6 +569,7 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
 	    		close(p[1]);
 		    }
 		    SimpleCommand* simplecmd = pipeline->commands[i].cmd.simple;
+	    	printf("pipeline->commands[i].cmd.simplecmd->argv = %s", simplecmd->argv);
 	    	for(int j = 0; j < simplecmd->argc; j++)
 		        printf("exec simplecmd->argv[ %d ] = %s\n", i, simplecmd->argv[j]);
 	    	exec(simplecmd->argv[0], simplecmd->argv);
