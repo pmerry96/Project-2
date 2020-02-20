@@ -533,7 +533,8 @@ panic(char *s) //included simply to give a gracefull terminating function in cas
     fprintf(2, "%s\n", s);
     exit(1);
 }
-
+// pipeline.commands[].simple.argv is the simple command
+// pipeline.commands[:] is the array of simple commands, accessed similarly to above
 int runPipelineCommnad(Pipeline *pipeline) {
     // DONE: the below (active) code is not functioning. A pipeline command still executes the first command but does not redirect the output nor does it execute the subsequent commands
     // TODO: fix the below code to no longer execute the first single command, but all commands in sequence

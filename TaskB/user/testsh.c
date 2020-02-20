@@ -8,6 +8,10 @@
 #include "user/user.h"
 #include "kernel/fcntl.h"
 
+
+#define STDIN  0
+#define STDOUT 1
+#define STDERR 2
 unsigned int seed = 123456789;
 
 // return a random integer.
@@ -39,11 +43,11 @@ writefile(char *name, char *data)
   unlink(name); // since no truncation
   int fd = open(name, O_CREATE|O_WRONLY);
   if(fd < 0){
-    fprintf(2, "testsh: could not write %s\n", name);
+    fprintf(STDERR, "testsh: could not write %s\n", name);
     exit(-1);
   }
   if(write(fd, data, strlen(data)) != strlen(data)){
-    fprintf(2, "testsh: write failed\n");
+    fprintf(STDERR, "testsh: write failed\n");
     exit(-1);
   }
   close(fd);
@@ -56,13 +60,13 @@ readfile(char *name, char *data, int max)
   data[0] = '\0';
   int fd = open(name, 0);
   if(fd < 0){
-    fprintf(2, "testsh: open %s failed\n", name);
+    fprintf(STDERR, "testsh: open %s failed\n", name);
     return;
   }
   int n = read(fd, data, max-1);
   close(fd);
   if(n < 0){
-    fprintf(2, "testsh: read %s failed\n", name);
+    fprintf(STDERR, "testsh: read %s failed\n", name);
     return;
   }
   data[n] = '\0';
@@ -109,31 +113,31 @@ one(char *cmd, char *expect, int tight)
 
   int pid = fork();
   if(pid < 0){
-    fprintf(2, "testsh: fork() failed\n");
+    fprintf(STDERR, "testsh: fork() failed\n");
     exit(-1);
   }
 
   if(pid == 0){
     close(0);
     if(open(infile, 0) != 0){
-      fprintf(2, "testsh: child open != 0\n");
+      fprintf(STDERR, "testsh: child open != 0\n");
       exit(-1);
     }
     close(1);
     if(open(outfile, O_CREATE|O_WRONLY) != 1){
-      fprintf(2, "testsh: child open != 1\n");
+      fprintf(STDERR, "testsh: child open != 1\n");
       exit(-1);
     }
     char *argv[2];
     argv[0] = shname;
     argv[1] = 0;
     exec(shname, argv);
-    fprintf(2, "testsh: exec %s failed\n", shname);
+    fprintf(STDERR, "testsh: exec %s failed\n", shname);
     exit(-1);
   }
 
   if(wait(0) != pid){
-    fprintf(2, "testsh: unexpected wait() return\n");
+    fprintf(STDERR, "testsh: unexpected wait() return\n");
     exit(-1);
   }
   unlink(infile);
@@ -144,7 +148,7 @@ one(char *cmd, char *expect, int tight)
 
   if(strstr(out, expect) != 0){
     if(tight && strlen(out) > strlen(expect) + 20){
-      fprintf(2, "testsh: saw expected output, but too much else as well\n");
+      fprintf(STDERR, "testsh: saw expected output, but too much else as well\n");
       return 0; // fail
     }
     return 1; // pass
@@ -366,7 +370,7 @@ t9(int *ok)
   
   char *cmd = malloc(25 * 36 + 100);
   if(cmd == 0){
-    fprintf(2, "testsh: malloc failed\n");
+    fprintf(STDERR, "testsh: malloc failed\n");
     exit(-1);
   }
 
@@ -395,7 +399,7 @@ int
 main(int argc, char *argv[])
 {
   if(argc != 2){
-    fprintf(2, "Usage: testsh nsh\n");
+    fprintf(STDERR, "Usage: testsh nsh\n");
     exit(-1);
   }
   shname = argv[1];
