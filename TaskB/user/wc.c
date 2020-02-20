@@ -7,7 +7,10 @@ char buf[512];
 void
 wc(int fd, char *name)
 {
-	printf("%s\n", name);
+	if(!name)
+		printf("noname\n");
+	else
+		printf("%s\n", name);
   int i, n;
   int l, w, c, inword;
 
