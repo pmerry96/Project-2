@@ -559,8 +559,8 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
     if(fork() > 0){
     	//fixes the file descriptors in the parent
 	    close(p[0]);
-	    write(p[1], pipeline->commands[0].cmd.simple->argv, 256)
-	    close(p[1])
+	    write(p[1], pipeline->commands[0].cmd.simple->argv, 256);
+	    close(p[1]);
     }else{
 	    //execs in child
 	    close(0);//close the write end on the child side - it only
@@ -571,7 +571,7 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
 	    for(int i = 0; i <= pipeline->len; i++)
 	    {
 		    simplecmd = pipeline->commands[i].cmd.simple;
-		    exec(simplecmd->argv[0], simplecmd->argv)
+		    exec(simplecmd->argv[0], simplecmd->argv);
 	    }
     }
     /*
