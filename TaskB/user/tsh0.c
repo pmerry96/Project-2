@@ -576,14 +576,14 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
     if(fork() == 0){
         close(0); //this is closing this process? -> close takes an int file descriptor, child context is 0, thus this is closing itself
         dup(p[0]);
-	    for(int i = 0; i < pipeline->len; i++)
+	    for(int i = 0; i <= pipeline->len; i++)
 	    {
 		    if(i == pipeline->len - 1)
 		    {
 			    close(p[1]);
 		    }
 		    SimpleCommand* simplecmd = pipeline->commands[i].cmd.simple;
-		    printf("exec simplecmd->argv[%i] = %s\n", i, simplecmd->argv[i]);
+		    printf("exec simplecmd->argv[ %d ] = %s\n", i, simplecmd->argv[i]);
 		    exec(simplecmd->argv[0], simplecmd->argv);
 		    pipeline = pipeline->commands[i].cmd.pipeline;
 	    }
