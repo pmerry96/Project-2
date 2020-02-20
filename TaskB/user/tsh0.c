@@ -558,6 +558,7 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
     int p[2];
     pipe(p);
     if(fork() == 0){
+    	close(p[1]);//close the write end on the child side - it only
         printf("len = %d\n", pipeline->len);
         SimpleCommand* simplecmd;
 	    for(int i = 0; i <= pipeline->len; i++)
@@ -565,14 +566,15 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
 	    	simplecmd = pipeline->commands[i].cmd.simple;
 		    dup(p[1]);
 	    	exec(simplecmd->argv[0], simplecmd->argv);
-		    char* buf[256];
-		    while(read(1, buf, 256))
-		    {
-			    fprintf(0, "%s", buf); //write to stdin
-		    }
 	    }
     }else{
     	//what does the parent process do
+	    char* buf[256];
+	    while(read(p[0], buf, 256) > 0)
+	    {
+		    write(0, "%s", buf); //write to stdin
+	    }
+    	wait(0);
     }
     /*
     if(fork() == 0){
