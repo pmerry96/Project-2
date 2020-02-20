@@ -558,26 +558,19 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
     int p[2];
     pipe(p);
     if(fork() == 0){
-        close(p[1]);
-        dup(p[1]); //sending stdout to the pipe rather than the cmd line
-        //close(p[1]);
+        close(p[0]);
         printf("len = %d\n", pipeline->len);
         SimpleCommand* simplecmd;
 	    for(int i = 0; i <= pipeline->len; i++)
 	    {
 	    	printf("i = %d\n", i);
-	    	if(i == pipeline->len)
-		    {
-	    		close(p[1]);
-		    }
 	    	simplecmd = pipeline->commands[i].cmd.simple;
 	    	printf("pipeline->commands[i].cmd.simplecmd->argv = %s\n", simplecmd->argv);
-	    	printf("command # %d\n", i);
-	    	for(int j = 0; j < simplecmd->argc; j++)
-		        printf("exec simplecmd->argv[ %d ] = %s\n", i, simplecmd->argv[j]);
+	    	printf("command # %d\n", i+1);
+	    	printf("\texec simplecmd->argv = %s\n", i, simplecmd->argv);
 	    	exec(simplecmd->argv[0], simplecmd->argv);
 		    char* buf[256];
-		    while(read(p[0], buf, 256))
+		    while(read(p[1], buf, 256))
 		    {
 			    write(0, buf, 256); //write to stdin
 		    }
