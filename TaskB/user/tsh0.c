@@ -566,8 +566,8 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
     for(i = 0; i < pipeline->len; i++) {
     	int pid = fork();
 	    if (pid > 0) {
-	    	close(p[0]);
-	    	close(p[1]);
+	    	//close(p[0]);
+	    	//close(p[1]);
 		    wait(0); //parent waits for child to finish up
 	    } else {
 		    if (i != 0) { //dont redirect input on the first command of the string
@@ -578,11 +578,13 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
 		        close(STD_OUT);//close the write end on the child side - it only
 		        dup(p[1]); //now we have duped the fd to take the position of 1
 	        }
-		    close(p[0]); //close it out because we wont use this handle
-		    close(p[1]);
+		    //close(p[0]); //close it out because we wont use this handle
+		    //close(p[1]);
 		    simplecmd = pipeline->commands[i].cmd.simple;
 		    exec(simplecmd->argv[0], simplecmd->argv); //my biggest problem is here4
 		    printf("not hung\n");
+		    close(p[0]);
+		    close(p[1]);
 	    }
     }
     /*
