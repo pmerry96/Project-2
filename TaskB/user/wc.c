@@ -10,7 +10,7 @@ wc(int fd, char *name)
 	if(!name)
 		printf("noname\n");
 	else
-		printf("%s\n", name);
+		printf("%s =name\n", name);
   int i, n;
   int l, w, c, inword;
 
