@@ -581,7 +581,6 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
 		    //close(p[0]); //close it out because we wont use this handle
 		    //close(p[1]);
 		    simplecmd = pipeline->commands[i].cmd.simple;
-		    printf("nothung\n");
 		    exec(simplecmd->argv[0], simplecmd->argv); //my biggest problem is here4
 		    close(p[0]);
 		    close(p[1]);
@@ -630,7 +629,7 @@ RunCommand(ShellState *shell) {
         } else if (strcmp(cmd->name, "exit") == 0) { //these are  "built in commands"
             shell->should_run = NO;
         } else if (strcmp(cmd->name, "cd") == 0) {
-            //REOLVED_TODO: implement case where we call a directory
+            //TODO - allow parsing of arguments P and L (might just skip it all together because these args mean nothing to me)
             if(!(strcmp(cmd->argv[1], "..") == 0 || strcmp(cmd->argv[1], ".") == 0)){ //thus we are accessing either this dir or a previous dir
                 if (chdir(cmd->argv[1]) != 0) {
                     printf("Error calling directory named %s\n", cmd->argv[1]);
@@ -639,12 +638,10 @@ RunCommand(ShellState *shell) {
                 if(strcmp(cmd->argv[1], "..") == 0)
                 {
                     chdir("..");
-                    printf("current directory = %s\n", shell->name);
+                    //printf("current directory = %s\n", shell->name);
                 }else{
                     //self referential call to cd, no change in dirs necessary.
-                    printf("Already in directory referenced by '.'\n");
-
-                    //chdir(".");
+                    //printf("Already in directory referenced by '.'\n");
                 }
             }
         } else {
