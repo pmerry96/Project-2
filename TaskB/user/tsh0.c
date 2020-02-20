@@ -563,7 +563,7 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
         //close(p[1]);
         printf("len = %d\n", pipeline->len);
         char* buf[256];
-        while(read(pfd[0], buff, 256))
+        while(read(p[0], buf, 256))
         {
         	write(0, buf, 256); //write to stdin
         }
