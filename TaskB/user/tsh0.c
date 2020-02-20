@@ -563,7 +563,7 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
 	    for(int i = 0; i <= pipeline->len; i++)
 	    {
 	    	simplecmd = pipeline->commands[i].cmd.simple;
-		    int des = dup(p[1]);
+		    dup(p[1]);
 	    	exec(simplecmd->argv[0], simplecmd->argv);
 		    char* buf[256];
 		    while(read(1, buf, 256))
