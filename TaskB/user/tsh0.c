@@ -535,28 +535,10 @@ panic(char *s) //included simply to give a gracefull terminating function in cas
 }
 // pipeline.commands[].simple.argv is the simple command
 // pipeline.commands[:] is the array of simple commands, accessed similarly to above
-
 //your problem is in redirecting the input
 int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
     // DONE: the below (active) code is not functioning. A pipeline command still executes the first command but does not redirect the output nor does it execute the subsequent commands
     // TODO: fix the below code to no longer execute the first single command, but all commands in sequence
-    /*
-    if(pipeline->flag != CMD_OK)
-    {
-        //give back error msg
-    }else{
-        int pid = fork();
-        if(pid == 0)
-        {
-            runSimpleCommand(pipeline->commands->cmd.simple);
-        }else{
-            //parent pocess
-            wait(&pid);
-            close(pid); //did i blank or is this accurate call?
-        }
-    }
-    return 0;
-     */
 
     //The below code came from the following:
     // ~/user/sc.h
@@ -574,24 +556,23 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
     //      ...
     //  ...
     int p[2];
-    //void* pcmd = ;//the extracted piped command; //this should be a type that is readily accessible to the argv element;
-    if(pipe(p) < 0)
-        panic("pipe");
+    pipe(p);
     if(fork() == 0){
-        close(1); //close the fd == 1
-        dup(p[1]); //duplicate the fd in p[1] -> note it then gets placed in the lowest element of P possible
-        for(int i = 0; i < pipeline->len; i++)
-        {
-            SimpleCommand* simplecmd = pipeline->commands[i].cmd.simple;
-            printf("exec simplecmd->argv[0] = %s\n", simplecmd->argv[0]);
-            exec(simplecmd->argv[0], simplecmd->argv);
-            char* buf[255 + 1];
-            read(1, buf, 256);
-            pipeline = pipeline->commands[i].cmd.pipeline;
-        }
-        close(p[0]);
+        close(p[0]); //close the fd == 1
+        dup2(p[1], 1); //sending stdout to the pipe rather than the cmd line
         close(p[1]);
-
+	    for(int i = 0; i < pipeline->len; i++)
+	    {
+	    	if(i == pipeline->len - 1;)
+		    {
+	    		dup2(1, p[1]); //restore output to the right place?
+	    		close(p[1]);
+		    }
+		    SimpleCommand* simplecmd = pipeline->commands[i].cmd.simple;
+		    printf("exec simplecmd->argv[0] = %s\n", simplecmd->argv[0]);
+		    exec(simplecmd->argv[0], simplecmd->argv);
+		    pipeline = pipeline->commands[i].cmd.pipeline;
+	    }
     }
     if(fork() == 0){
         close(0); //this is closing this process? -> close takes an int file descriptor, child context is 0, thus this is closing itself

@@ -26,3 +26,4 @@ TaskA/primes
 .idea/
 tags
 
+/cmake-build-debug/
