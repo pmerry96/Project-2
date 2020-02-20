@@ -561,7 +561,6 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
         close(p[0]); //close the fd == 1
         dup(q); //sending stdout to the pipe rather than the cmd line
         close(p[1]);
-        dup
 	    for(int i = 0; i < pipeline->len; i++)
 	    {
 	    	if(i == pipeline->len - 1)
