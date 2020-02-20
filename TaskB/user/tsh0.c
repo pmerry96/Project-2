@@ -561,8 +561,14 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
     	close(p[1]);//close the write end on the child side - it only
         printf("len = %d\n", pipeline->len);
         SimpleCommand* simplecmd;
+        int oldi = 0;
 	    for(int i = 0; i <= pipeline->len; i++)
 	    {
+	    	if(i > oldi)
+		    {
+	    		oldi++;
+	    		printf("iterating\n");
+		    }
 	    	simplecmd = pipeline->commands[i].cmd.simple;
 		    dup(p[1]);
 	    	exec(simplecmd->argv[0], simplecmd->argv);
