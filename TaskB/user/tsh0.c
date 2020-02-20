@@ -563,7 +563,7 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
         //close(p[1]);
         printf("%d\n", pipeline->len);
         SimpleCommand* simplecmd;
-	    for(int i = 0; i <= pipeline->len; i+=simplecmd.argc)
+	    for(int i = 0; i <= pipeline->len; i+=simplecmd->argc)
 	    {
 	    	if(i == pipeline->len)
 		    {
