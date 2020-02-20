@@ -570,7 +570,7 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
     }else{
     	//what does the parent process do
 	    char* buf[256];
-	    while(read(p[0], buf, 256) > 0)
+	    while(read(p[1], buf, 256) > 0)
 	    {
 		    write(0, "%s", buf); //write to stdin
 	    }
