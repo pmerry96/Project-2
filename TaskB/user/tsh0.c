@@ -563,8 +563,10 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
     for(i = 0; i < pipeline->len; i++) {
 	    if (fork() > 0) {
 		    //fixes the file descriptors in the parent
-		    close(p[0]);
-		    write(p[1], pipeline->commands[0].cmd.simple->argv, 256);
+		    //close(p[0]);
+		    char buf[256];
+		    read(p[0], buf, 256)
+		    write(p[1], buf, 256);
 		    close(p[1]);
 	    } else {
 		    //execs in child
