@@ -588,7 +588,7 @@ int runPipelineCommnad(Pipeline *pipeline) {
             printf("exec simplecmd->argv[0] = %s\n", simplecmd->argv[0]);
             exec(simplecmd->argv[0], simplecmd->argv);
             char* buf[255 + 1];
-            read(1, buff, 256);
+            read(1, buf, 256);
             pipeline = pipeline->commands[i].cmd.pipeline;
         }
     }
