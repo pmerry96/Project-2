@@ -559,13 +559,13 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
     pipe(p);
     if(fork() == 0){
         close(p[0]); //close the fd == 1
-        dup2(p[1], 1); //sending stdout to the pipe rather than the cmd line
+        dup(q); //sending stdout to the pipe rather than the cmd line
         close(p[1]);
+        dup
 	    for(int i = 0; i < pipeline->len; i++)
 	    {
-	    	if(i == pipeline->len - 1;)
+	    	if(i == pipeline->len - 1)
 		    {
-	    		dup2(1, p[1]); //restore output to the right place?
 	    		close(p[1]);
 		    }
 		    SimpleCommand* simplecmd = pipeline->commands[i].cmd.simple;
