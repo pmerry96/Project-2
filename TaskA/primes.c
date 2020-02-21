@@ -44,7 +44,7 @@ int main(int argc, char** argv) {
         int pid = fork();
         if(pid == 0) {
         	//child will just write
-	        write(p[1], &two, sizeof(two));
+	        write(/*p[1]*/1, &two, sizeof(two));
 	        close(p[0]);
 	        close(p[1]);
 	        printf("first call child done\n");
