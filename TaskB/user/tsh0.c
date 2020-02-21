@@ -584,6 +584,7 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
 
 //I am well aware redirection does not work at this point. It is a work in progress
 int runSimpleCommand(SimpleCommand *cmd) {
+	printf("came from tsh0\n");
 	//RESOLVED_TODO - simple commands seem to be working after testing
 	//tested commands include ls, wc, cat, echo, etc
 	if(cmd->flag != 0x00) //is flag 0x00 indicative of no error?
