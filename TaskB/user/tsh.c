@@ -486,55 +486,8 @@ GetCommand(ShellState *shell) {
 
 
 int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
-	// DONE: the below (active) code is not functioning. A pipeline command still executes the first command but does not redirect the output nor does it execute the subsequent commands
-	// TODO: the below code now execs all commands in a pipeline, but it wont redirect output. Fix that.
-	
-	//The below code came from the following:
-	// ~/user/sc.h
-	//      in function 'runcmd(struct cmd)
-	//             ...
-	//              switch(cmd->type)
-	//                  ...
-	//                  case PIPE:
-	//                      BEGIN COPIED PORTION ***
-	//                      ...
-	//                      END COPIED PORTION   ***
-	//                  break;
-	//              ...
-	//          ...
-	//      ...
-	//  ...
 	int p[2];
 	pipe(p);
-	//SimpleCommand *simplecmd = pipeline->commands[0].cmd.simple;
-	//in the below if statement - what about piperead() or pipewrite()
-	/*
-	for(i = 0; i < pipeline->len; i++) {
-		printf("made inside the exec loop\n");
-		int pid = fork();
-		if (pid > 0) {
-			//close(p[0]);
-			//close(p[1]);
-			wait(0); //parent waits for child to finish up
-		}else{
-			if (i != 0) { //dont redirect input on the first command of the string
-				printf("cmd %i ")
-				close(STD_IN);
-				dup(p[0]); //this lets the process grab input previously written
-			}
-			if (i != pipeline->len - 1) { //dont redirect output on the last command of the string
-				close(STD_OUT);//close the write end on the child side - it only
-				dup(p[1]); //now we have duped the fd to take the position of 1
-			}
-			//close(p[0]); //close it out because we wont use this handle
-			//close(p[1]);
-			simplecmd = pipeline->commands[i].cmd.simple;
-			exec(simplecmd->argv[0], simplecmd->argv); //my biggest problem is here4
-			close(p[0]);
-			close(p[1]);
-		}
-	}
-	 */
 	//The below code comes from the HW3 question 4 - Pipes.
 	//I have used a very similar structure to the aforementioned, but made some changes for this specific application
 	if(fork() == 0)
@@ -553,30 +506,10 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
 		close(p[1]);
 		exec(pipeline->commands[1].cmd.simple->argv[0], pipeline->commands[1].cmd.simple->argv);
 	}
-	
 	close(p[0]);
 	close(p[1]);
 	wait(0);
 	wait(0);
-	/*
-	if(fork() == 0){
-		close(0); //this is closing this process? -> close takes an int file descriptor, child context is 0, thus this is closing itself
-		dup(p[0]);
-		for(int i = 0; i <= pipeline->len; i++)
-		{
-			if(i == pipeline->len - 1)
-			{
-				close(p[1]);
-			}
-			SimpleCommand* simplecmd = pipeline->commands[i].cmd.simple;
-			printf("exec simplecmd->argv[ %d ] = %s\n", i, simplecmd->argv[i]);
-			exec(simplecmd->argv[0], simplecmd->argv);
-			pipeline = pipeline->commands[i].cmd.pipeline;
-		}
-		close(p[0]);
-		close(p[1]);
-	}
-	 */
 	return(0);
 }
 
@@ -598,15 +531,12 @@ int runSimpleCommand(SimpleCommand *cmd) {
 				dup(fd);
 				close(fd);
 			}
-			exec(cmd->argv[0], cmd->argv); //this might be too high level, but im not sure what itd want.
+			exec(cmd->argv[0], cmd->argv); //this might be too high level and not redirect
 			//so this will make it to exec, but im worried that I will not be able to redirect output.
-			/*
-			 *  soln: pass a flag "ispiped", that denotes whether it should pass output to stdin or stdout
-			 */
 			close(pid);
 		}else{
 			//in parent context
-			wait(&pid); //pass it the pid to wait on
+			wait(0); //pass it the pid to wait on
 			close(pid);
 		}
 	}
@@ -618,7 +548,6 @@ RunCommand(ShellState *shell) {
 	Command *command = shell->cmd;
 	if (command->type == CMD_EMPTY) {
 		return 1;
-		
 	} else if (command->type == CMD_INVALID) {
 		ErrorU("invalid command");
 		return -1;
@@ -639,12 +568,12 @@ RunCommand(ShellState *shell) {
 				if (chdir(cmd->argv[1]) != 0) {
 					printf("Error calling directory named %s\n", cmd->argv[1]);
 				}
-				printf("current directory = %s\n", shell->name);
+				//printf("current directory = %s\n", shell->name);
 			}else{
 				if(strcmp(cmd->argv[1], "..") == 0)
 				{
 					chdir("..");
-					printf("current directory = %s\n", shell->name);
+					//printf("current directory = %s\n", shell->name);
 				}else{
 					//self referential call to cd, no change in dirs necessary.
 					//printf("Already in directory referenced by '.'\n");
