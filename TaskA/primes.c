@@ -43,14 +43,19 @@ int main(int argc, char** argv) {
         int two = 2;
         int pid = fork();
         if(pid == 0) {
+        	//child will just write
 	        write(p[1], &two, sizeof(two));
 	        close(p[0]);
 	        close(p[1]);
+	        printf("first call child done\n");
         }else{
+        	//parent will call the sieve
+	        wait(0);
 	        close(p[0]);
 	        close(p[1]);
-	        wait(0);
+	        printf("first call bout to enter sieve\n");
 	        primeSieve(primes_up_to, pid);
+	        printf("first call parent done\n");
         }
     }
     /*
@@ -125,6 +130,7 @@ int isprime(int num)
 
 void primeSieve(int up_to, int pid)
 {
+	printf("calling sieve on pid = %d\n", pid);
     int p[2];
     pipe(p);
     int n;
