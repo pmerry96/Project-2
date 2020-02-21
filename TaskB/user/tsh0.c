@@ -572,7 +572,7 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
     //  ...
     int p[2];
     pipe(p);
-    int i = 0;
+    //int i = 0;
 	SimpleCommand *simplecmd = pipeline->commands[0].cmd.simple;
     //in the below if statement - what about piperead() or pipewrite()
     /*
