@@ -1,6 +1,10 @@
 //
 // Created by Philip on 2/19/2020.
 //
+#include<stdio.h>
+#include<stdlib.h>
+
+
 /*
 int multiplesof(int* start_At, int up_to, int mulsof)
 {
