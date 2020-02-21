@@ -605,7 +605,7 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
         dup(p[1]);
         close(p[0]);
         close(p[1]);
-        exec(pipeline->commands[0].cmd.simple.argv[0], pipeline->commands[0].cmd.simple.argv);
+        exec(pipeline->commands[0].cmd.simple->argv[0], pipeline->commands[0].cmd.simple->argv);
     }
     if(fork()==0)
     {
@@ -613,7 +613,7 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
         dup(p[0]);
         close(p[0]);
         close(p[1]);
-        exec(pipeline->commands[1].cmd.simple.argv[0], pipeline->commands[1].cmd.simple.argv);
+        exec(pipeline->commands[1].cmd.simple->argv[0], pipeline->commands[1].cmd.simple->argv);
     }
 
     close(p[0]);
