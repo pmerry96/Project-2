@@ -133,11 +133,11 @@ void primeSieve(int up_to, int pid)
 	printf("calling sieve on pid = %d\n", pid);
     int p[2];
     pipe(p);
-    int n;
+    int n = 0;
     printf("preread\n");
     int incoming = read(1 , &n, sizeof(n));
     printf("postread\n");
-    if(incoming != 0)
+    if(incoming < 0)
     {
     	printf("read Error in Primeseive, coming from PID = %d\n", pid);
     }
