@@ -120,8 +120,12 @@ void primeSieve(int up_to, int pid)
     pipe(p);
     int n;
     int incoming = read(p[0], &n, sizeof(n));
+    if(incoming != 0)
+    {
+    	printf("read Error in Primeseive, coming from PID = %d\n", pid)
+    }
     if(isprime(n))
-        printf("pid=%d prime %d", pid, n);
+        printf("pid=%d prime %d\n", pid, n);
     pid = fork();
     if(pid == 0)
     {
