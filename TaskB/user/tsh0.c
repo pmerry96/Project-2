@@ -572,7 +572,6 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
     //  ...
     int p[2];
     pipe(p);
-    //int i = 0;
 	SimpleCommand *simplecmd = pipeline->commands[0].cmd.simple;
     //in the below if statement - what about piperead() or pipewrite()
     /*
@@ -606,16 +605,15 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
         dup(p[1]);
         close(p[0]);
         close(p[1]);
-        exec(simplecmd->argv[0], simplecmd->argv);
+        exec(pipeline->commands[0].cmd.argv[0], pipeline->commands[0].cmd.argv);
     }
-    simplecmd = pipeline->commands[1].cmd.simple;
     if(fork()==0)
     {
         close(STD_IN);
         dup(p[0]);
         close(p[0]);
         close(p[1]);
-        exec(simplecmd->argv[0], simplecmd->argv);
+        exec(pipeline->commands[1].cmd.argv[0], pipeline->commands[1].cmd.argv);
     }
 
     close(p[0]);
