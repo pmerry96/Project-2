@@ -1,7 +1,7 @@
 //
 // Created by Philip on 2/19/2020.
 //
-
+/*
 int multiplesof(int* start_At, int up_to, int mulsof)
 {
     int new = mulsof + start_At;
@@ -22,7 +22,7 @@ int inarray(int isin, int* vec, int vecsize)
     }
     return 0;
 }
-
+*/
 int main(int argc, char** argv) {
     if (argc < 2) {
         printf("Error: too few arguments\n");
