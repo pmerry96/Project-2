@@ -7,6 +7,15 @@
 #include <sys/types.h> //maybe dont include this
 #include <sys/wait.h>
 
+/*
+ * Statements about part A of project 2
+ *  I have been primarily focused on Part B, as that is where the majority of the points lie.
+ *  As the due date draws near, I have decided to put part A on the back-burner in favor of
+ *  Part B. As such, the code runs and initiates the sequence for a prime sieve, but hangs after the
+ *  first read(...) (inside primeSieve()). If you are seeing this comment it means I did not have
+ *  time to complete task A before the due date and I still intend to return and finish part A.
+ */
+
 void primeSieve(int, int);
 
 /*

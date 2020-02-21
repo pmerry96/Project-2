@@ -4,6 +4,22 @@
 #include "kernel/fcntl.h"
 //#include <stdio.h>
 
+/*
+ * Disclaimer: I did discuss high level concepts with other students from class. I do not know their last names, but their
+ * first names are Tim and Adam respectively. While concepts were discussed, all of the below code (that did not come
+ * in the starter file) was written by me (Philip Merry/Pmerry). Any code segments gleaned from online resources, the textbook,
+ * or other Xv6 source files are denoted as such
+ */
+
+/*
+ * Note on the state of Part B:
+ * At the time of writing this comment (and at the time of the last commit, given this comment still exists in the file)
+ * this is a work in progress. I have put in the time to attempt to get all functionality working, but some features
+ * are still beyond my grasp. AS LONG AS THIS COMMENT IS PRESENT, I AM STILL WORKING ON THIS PROJECT. At 11:59 Friday, Februarry 21st
+ * I will have a 'polished' submission that may still lack functionality, but subsequent improvements to the program will come. This
+ * 'polished' version will serve as a stand submission, supposing I find no additional ways to progress my work after the due date
+ */
+
 #define YES     1
 #define NO      0
 #define EOF     -1
@@ -597,6 +613,8 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
 	    }
     }
      */
+    //The below code comes from the HW3 question 4 - Pipes.
+    //I have used a very similar structure to the aforementioned, but made some changes for this specific application
     if(fork() == 0)
     {
         close(STD_OUT);
