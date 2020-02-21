@@ -43,7 +43,7 @@ int main(int argc, char** argv) {
         int two = 2;
         int pid = fork();
         if(pid == 0) {
-	        write(p[1], two, sizeof(two));
+	        write(p[1], &two, sizeof(two));
 	        close(p[0]);
 	        close(p[1]);
         }else{
