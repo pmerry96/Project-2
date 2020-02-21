@@ -484,7 +484,7 @@ int runSimpleCommand(SimpleCommand *cmd) {
         int pid = fork();
         if(pid == 0)
         {
-            if(cmd->redirects[0].dest_fd >= 0)
+            if(cmd->redirects[1].dest_fd >= 0)
             {
                 int p[2];
                 //p[0] = read
