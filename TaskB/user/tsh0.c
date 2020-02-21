@@ -2,7 +2,7 @@
 #include "user/user.h"
 #include "user/tsh.h"
 #include "kernel/fcntl.h"
-#include <stdio.h>
+//#include <stdio.h>
 
 #define YES     1
 #define NO      0
