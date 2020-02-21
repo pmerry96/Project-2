@@ -49,6 +49,7 @@ int main(int argc, char** argv) {
         }else{
 	        close(p[0]);
 	        close(p[1]);
+	        wait();
 	        primeSieve(primes_up_to, pid);
         }
     }
@@ -139,8 +140,14 @@ void primeSieve(int up_to, int pid)
     {
         n++;
         write(p[1], &n, sizeof(n));
+        close(p[0]);
+        close(p[1]);
     }else{
 	    primeSieve(up_to, pid);
         wait(0);
+	    close(p[0]);
+	    close(p[1]);
     }
+	close(p[0]);
+	close(p[1]);
 }
