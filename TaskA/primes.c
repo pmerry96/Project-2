@@ -33,7 +33,7 @@ int main(int argc, char** argv) {
         printf("./primes <get primes below this integer value>\n");
         exit(0);
     }else{
-        int primes_up_to = argv[1];
+        int primes_up_to = atoi(argv[1]);
         int p[2];
         pipe(p);
         int two = 2;
