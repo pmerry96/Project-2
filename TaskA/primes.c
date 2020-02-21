@@ -26,16 +26,23 @@ int inarray(int isin, int* vec, int vecsize)
 int main(int argc, char** argv) {
     if (argc < 2) {
         printf("Error: too few arguments\n");
+        printf("./primes <get primes below this integer value>\n");
         exit(0);
     }else{
         int primes_up_to = argv[1];
         int p[2];
         pipe(p);
         int two = 2;
-        write(p[1], two, sizeof(two));
-        close(p[0]);
-        close(p[1]);
-        enter_prime_sieve(primes_up_to);
+        int pid = fork();
+        if(pid == 0) {
+	        write(p[1], two, sizeof(two));
+	        close(p[0]);
+	        close(p[1]);
+        }else{
+	        close(p[0]);
+	        close(p[1]);
+	        primeSieve(primes_up_to, pid);
+        }
     }
     /*
     if (argc < 2) {
@@ -107,21 +114,21 @@ int isprime(int num)
     return 1;
 }
 
-void primeSieve(int up_to)
+void primeSieve(int up_to, int pid)
 {
     int p[2];
     pipe(p);
     int n;
     int incoming = read(p[0], &n, sizeof(n));
     if(isprime(n))
-        printf("pid=%d prime %d", n);
+        printf("pid=%d prime %d", pid, n);
     pid = fork();
     if(pid == 0)
     {
         n++;
         write(p[1], &n, sizeof(n));
-        primeSieve(up_to);
     }else{
+	    primeSieve(up_to, pid);
         wait(0);
     }
 }

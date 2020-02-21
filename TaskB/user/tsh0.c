@@ -572,6 +572,7 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
     //in the below if statement - what about piperead() or pipewrite()
     /*
     for(i = 0; i < pipeline->len; i++) {
+    	printf("made inside the exec loop\n");
     	int pid = fork();
 	    if (pid > 0) {
 	    	//close(p[0]);
@@ -579,6 +580,7 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
 		    wait(0); //parent waits for child to finish up
 	    }else{
 		    if (i != 0) { //dont redirect input on the first command of the string
+		    	printf("cmd %i ")
 			    close(STD_IN);
 			    dup(p[0]); //this lets the process grab input previously written
 		    }
