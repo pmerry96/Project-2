@@ -52,31 +52,31 @@ typedef struct Token {
 } Token;
 
 typedef struct TokenList {
-	int len;
-	Token tokens[TSH_MAX_NUM_TOKENS];
+    int len;
+    Token tokens[TSH_MAX_NUM_TOKENS];
 } TokenList;
 
 enum RedirectionType {
-	REDIRECT_INPUT,
-	REDIRECT_OUTPUT,
-	REDIRECT_APPEND,
-	REDIRECT_NONE
+    REDIRECT_INPUT,
+    REDIRECT_OUTPUT,
+    REDIRECT_APPEND,
+    REDIRECT_NONE
 };
 
 // A Redirection data structure
 typedef struct Redirection {
-	int source_fd;              // redirect which the file represented by file descriptor
-	int dest_fd;                // the file descriptor of the destination file, use only when >= 0
-	char *path;                 // the path of the destination file, use only when NOT NULL
-	enum RedirectionType type;  // The type of the redirected file
+    int source_fd;              // redirect which the file represented by file descriptor
+    int dest_fd;                // the file descriptor of the destination file, use only when >= 0
+    char *path;                 // the path of the destination file, use only when NOT NULL
+    enum RedirectionType type;  // The type of the redirected file
 } Redirection;
 
 enum CommandType {
-	CMD_INVALID,
-	CMD_EMPTY,
-	CMD_SIMPLE,
-	CMD_PIPELINE,
-	CMD_LIST
+    CMD_INVALID,
+    CMD_EMPTY,
+    CMD_SIMPLE,
+    CMD_PIPELINE,
+    CMD_LIST
 };
 
 struct SimpleCommand;
@@ -99,21 +99,21 @@ struct Pipeline;
 //Command thecmd
 //thecmd.cmd.pipeline.commands[i].cmd.pipeline.commands[i]...
 typedef struct Command { //im still stumped in how to extract the name of the command from this struct
-	int type;
-	int flag;
-	union { //this means that the data in the union's mem locs is shared between the simple and pipeline structs
-		struct SimpleCommand *simple;
-		struct Pipeline *pipeline;
-	} cmd; //as i learned about unions Im wondering why a union was used? seems to complicate things
+    int type;
+    int flag;
+    union { //this means that the data in the union's mem locs is shared between the simple and pipeline structs
+        struct SimpleCommand *simple;
+        struct Pipeline *pipeline;
+    } cmd; //as i learned about unions Im wondering why a union was used? seems to complicate things
 } Command;
 
 typedef struct SimpleCommand {
-	enum CommandType type;
-	int flag;
-	char *name;
-	int argc;
-	char *argv[TSH_MAX_NUM_ARGUMENTS + 1];
-	Redirection redirects[3]; //whats this here for
+    enum CommandType type;
+    int flag;
+    char *name;
+    int argc;
+    char *argv[TSH_MAX_NUM_ARGUMENTS + 1];
+    Redirection redirects[3]; //whats this here for
 } SimpleCommand;
 
 
