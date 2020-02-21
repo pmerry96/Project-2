@@ -49,7 +49,7 @@ int main(int argc, char** argv) {
         }else{
 	        close(p[0]);
 	        close(p[1]);
-	        wait();
+	        wait(0);
 	        primeSieve(primes_up_to, pid);
         }
     }
