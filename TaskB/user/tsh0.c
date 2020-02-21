@@ -486,14 +486,10 @@ int runSimpleCommand(SimpleCommand *cmd) {
         {
             if(cmd->redirects[1].dest_fd >= 0)
             {
-                int p[2];
-                //p[0] = read
-                //p[1] = write
-                pipe(p);
                 close(STD_OUT);
-                dup(cmd->redirects[0].dest_fd);
-                close(p[0]);
-                close(p[1]);
+                int fd = open(cmd->redirects[1].path, O_CREATE | O_WRONLY);
+                dup(fd);
+                close(fd);
             }
             exec(cmd->argv[0], cmd->argv); //this might be too high level, but im not sure what itd want.
             //so this will make it to exec, but im worried that I will not be able to redirect output.
