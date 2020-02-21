@@ -135,7 +135,7 @@ void primeSieve(int up_to, int pid)
     pipe(p);
     int n;
     printf("preread\n");
-    int incoming = read(p[0], &n, sizeof(n));
+    int incoming = read(1 , &n, sizeof(n));
     printf("postread\n");
     if(incoming != 0)
     {
