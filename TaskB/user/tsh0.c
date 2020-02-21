@@ -25,6 +25,8 @@
 #define STD_OUT 1
 #define STD_IN 0
 
+// |= THIS IS THE BITWISE OR ASSIGNMENT
+// thanks for not having any documentation xv6
 
 static char *default_prompt = "tsh> ";
 
