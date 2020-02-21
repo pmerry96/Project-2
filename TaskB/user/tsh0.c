@@ -573,15 +573,16 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
     int p[2];
     pipe(p);
     int i = 0;
-	SimpleCommand *simplecmd;
+	SimpleCommand *simplecmd = pipeline->commands[0].cmd.simple;
     //in the below if statement - what about piperead() or pipewrite()
+    /*
     for(i = 0; i < pipeline->len; i++) {
     	int pid = fork();
 	    if (pid > 0) {
 	    	//close(p[0]);
 	    	//close(p[1]);
 		    wait(0); //parent waits for child to finish up
-	    } else {
+	    }else{
 		    if (i != 0) { //dont redirect input on the first command of the string
 			    close(STD_IN);
 			    dup(p[0]); //this lets the process grab input previously written
@@ -598,6 +599,29 @@ int runPipelineCommnad(Pipeline *pipeline) {//nice typo there @ author.
 		    close(p[1]);
 	    }
     }
+     */
+    if(fork() == 0)
+    {
+        close(STD_OUT);
+        dup(p[1]);
+        close(p[0]);
+        close(p[1]);
+        exec(simplecmd->argv[0], simplecmd->argv);
+    }
+    simplecmd = pipeline->commands[1].cmd.simple;
+    if(fork()==0)
+    {
+        close(STD_IN);
+        dup(p[0]);
+        close(p[0]);
+        close(p[1]);
+        exec(simplecmd->argv[0], simplecmd->argv);
+    }
+
+    close(p[0]);
+    close(p[1]);
+    wait(0);
+    wait(0);
     /*
     if(fork() == 0){
         close(0); //this is closing this process? -> close takes an int file descriptor, child context is 0, thus this is closing itself
