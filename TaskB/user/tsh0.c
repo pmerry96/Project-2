@@ -2,6 +2,7 @@
 #include "user/user.h"
 #include "user/tsh.h"
 #include "kernel/fcntl.h"
+#include <stdio.h>
 
 #define YES     1
 #define NO      0
@@ -97,7 +98,7 @@ typedef struct SimpleCommand {
     char *name;
     int argc;
     char *argv[TSH_MAX_NUM_ARGUMENTS + 1];
-    Redirection redirects[3];
+    Redirection redirects[3]; //whats this here for
 } SimpleCommand;
 
 
@@ -483,10 +484,21 @@ int runSimpleCommand(SimpleCommand *cmd) {
         int pid = fork();
         if(pid == 0)
         {
+            if(cmd->redirects[0].dest_fd >= 0)
+            {
+                int p[2];
+                //p[0] = read
+                //p[1] = write
+                pipe(p);
+                close(STD_OUT);
+                dup(cmd->redirects[0].dest_fd);
+                close(p[0]);
+                close(p[1]);
+            }
             exec(cmd->argv[0], cmd->argv); //this might be too high level, but im not sure what itd want.
             //so this will make it to exec, but im worried that I will not be able to redirect output.
             /*
-             * soln: pass a flag "ispiped", that denotes whether it should pass output to stdin or stdout
+             *  soln: pass a flag "ispiped", that denotes whether it should pass output to stdin or stdout
              */
             close(pid);
         }else{
