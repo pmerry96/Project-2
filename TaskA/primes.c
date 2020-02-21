@@ -27,6 +27,20 @@ int main(int argc, char** argv) {
     if (argc < 2) {
         printf("Error: too few arguments\n");
         exit(0);
+    }else{
+        int primes_up_to = argv[1];
+        int p[2];
+        pipe(p);
+        int two = 2;
+        write(p[1], two, sizeof(two));
+        close(p[0]);
+        close(p[1]);
+        enter_prime_sieve(primes_up_to);
+    }
+    /*
+    if (argc < 2) {
+        printf("Error: too few arguments\n");
+        exit(0);
     } else {
         int up_to = atoi(argv[1]);
         if (up_to < 2) {
@@ -74,4 +88,40 @@ int main(int argc, char** argv) {
         }
     }
     exit(0);
+     */
+}
+
+int isprime(int num)
+{
+    if(num == 2)
+    {
+        return 1;
+    }
+    for(int i = 2; i < num; i++)
+    {
+        if(num % i)
+        {
+           return 0;
+        }
+    }
+    return 1;
+}
+
+void primeSieve(int up_to)
+{
+    int p[2];
+    pipe(p);
+    int n;
+    int incoming = read(p[0], &n, sizeof(n));
+    if(isprime(n))
+        printf("pid=%d prime %d", n);
+    pid = fork();
+    if(pid == 0)
+    {
+        n++;
+        write(p[1], &n, sizeof(n));
+        primeSieve(up_to);
+    }else{
+        wait(0);
+    }
 }
