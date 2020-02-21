@@ -51,11 +51,11 @@ int main(int argc, char** argv) {
         }else{
         	//parent will call the sieve
 	        wait(0);
-	        close(p[0]);
-	        close(p[1]);
 	        printf("first call bout to enter sieve\n");
 	        primeSieve(primes_up_to, pid);
 	        printf("first call parent done\n");
+	        close(p[0]);
+	        close(p[1]);
         }
     }
     /*
@@ -133,9 +133,9 @@ void primeSieve(int up_to, int pid)
 	printf("calling sieve on pid = %d\n", pid);
     int p[2];
     pipe(p);
-    int n = 0;
+    int n = 5;
     printf("preread\n");
-    int incoming = read(1 , &n, sizeof(n));
+    int incoming = read(p[0] , &n, sizeof(n));
     printf("postread\n");
     if(incoming < 0)
     {
