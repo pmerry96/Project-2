@@ -1,8 +1,10 @@
 //
 // Created by Philip on 2/19/2020.
 //
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/types.h> //maybe dont include this
 
 
 /*
